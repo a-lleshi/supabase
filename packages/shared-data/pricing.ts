@@ -1,5 +1,5 @@
 type Pricing = {
-  database: PricingCategory
+  hosteddesktop: PricingCategory
   auth: PricingCategory
   storage: PricingCategory
   edge_functions: PricingCategory
@@ -28,12 +28,12 @@ type PricingFeature = {
 }
 
 export const pricing: Pricing = {
-  database: {
-    title: 'Database',
+  hosteddesktop: {
+    title: 'hosteddesktop',
     icon: 'M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4',
     features: [
       {
-        title: 'Dedicated Postgres Database',
+        title: 'Dedicated Hosted Windows Desktops',
         tooltips: {
           main: 'A Postgres database with no restrictions? You get it. No pseudo limited users, you are the postgres root user.  No caveats.',
         },

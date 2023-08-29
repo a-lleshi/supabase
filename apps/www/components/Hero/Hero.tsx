@@ -30,33 +30,32 @@ const Hero = () => {
                 ].join(' ')}
               >
                 <div className="flex flex-col items-center">
-                  <div className="z-40 w-full flex justify-center mb-8 lg:mb-12">
+                  {/* <div className="z-40 w-full flex justify-center mb-8 lg:mb-12">
                     <LWAnnouncement />
-                  </div>
-                  <h1 className="text-scale-1200 text-4xl sm:text-5xl sm:leading-none lg:text-7xl">
-                    <span className="block text-[#F4FFFA00] bg-clip-text bg-gradient-to-b from-scale-1200 to-scale-1200 dark:to-scale-1100">
-                      Build in a weekend
+                  </div> */}
+                  <h1 className="text-scale-1100 text-4xl sm:text-5xl sm:leading-none lg:text-6xl">
+                    <span className="block text-[#F4FFFA00] bg-clip-text bg-gradient-to-b from-scale-1100 to-scale-1100 dark:to-scale-1100">
+                      Your Desktop
                     </span>
                     <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#3ECF8E] via-[#3ECF8E] to-[#3ecfb2] block md:ml-0">
-                      Scale to millions
+                      Anywhere You Need It
                     </span>
                   </h1>
                   <p className="pt-2 text-scale-1200 my-3 text-sm sm:mt-5 lg:mb-0 sm:text-base lg:text-lg">
-                    Supabase is an open source Firebase alternative.{' '}
+                    We offer a range of cloud solutions to businesses.{' '}
                     <br className="hidden md:block" />
-                    Start your project with a Postgres database, Authentication, instant APIs, Edge
-                    Functions, Realtime subscriptions, Storage, and Vector embeddings.
+                    Relieve the stress of IT infustructure, down time for applications and let us take care of it for you.
                   </p>
                 </div>
                 <div className="flex items-center gap-2">
                   <Link
-                    href="https://supabase.com/dashboard"
-                    as="https://supabase.com/dashboard"
+                    href="/pricing"
+                    as="/pricing"
                     passHref
                   >
                     <a onClick={() => sendTelemetryEvent(gaEvents['www_hp_hero_startProject'])}>
                       <Button size="medium" className="text-white">
-                        Start your project
+                        Hosted Desktop Pricing
                       </Button>
                     </a>
                   </Link>

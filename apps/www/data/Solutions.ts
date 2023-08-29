@@ -2,14 +2,14 @@ import { products } from 'shared-data'
 import { PRODUCT_NAMES, PRODUCT_SHORTNAMES } from 'shared-data/products'
 
 const solutions = {
-  [PRODUCT_SHORTNAMES.DATABASE]: {
-    name: PRODUCT_NAMES.DATABASE,
-    icon: products.database.icon[24],
+  [PRODUCT_SHORTNAMES.HOSTEDDESKTOP]: {
+    name: PRODUCT_NAMES.HOSTEDDESKTOP,
+    icon: products.hosteddesktop.icon[24],
     description:
-      "Every project is a full Postgres database, the world's most trusted relational database.",
+      "A windows or linux server hosted on the cloud. Access your data any where any time with just an internet connection.",
     description_short: '',
     label: '',
-    url: '/database',
+    url: '/hosted',
   },
   [PRODUCT_SHORTNAMES.AUTHENTICATION]: {
     name: PRODUCT_NAMES.AUTHENTICATION,

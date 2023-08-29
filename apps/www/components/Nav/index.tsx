@@ -77,7 +77,7 @@ const Nav = () => {
             <p className="space-x-2 text-base font-medium text-gray-900 dark:text-white">
               <span>{name}</span>
               {label && (
-                <Badge dot color="green">
+                <Badge dot color="blue">
                   {label}
                 </Badge>
               )}
@@ -121,7 +121,7 @@ const Nav = () => {
       <button
         className={[
           'text-scale-900 focus:ring-brand dark:bg-scale-200 dark:hover:bg-scale-300 inline-flex items-center justify-center rounded-md bg-gray-50 p-2 hover:bg-white focus:outline-none focus:ring-2 focus:ring-inset',
-          showLaunchWeekNavMode && '!bg-transparent border border-[#be9eea]',
+          showLaunchWeekNavMode && '!bg-transparent border border-[#00b2cc]',
         ].join(' ')}
         aria-expanded="false"
       >
@@ -132,7 +132,7 @@ const Nav = () => {
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
-          stroke={showLaunchWeekNavMode ? '#be9eea' : 'currentColor'}
+          stroke={showLaunchWeekNavMode ? '#00b2cc' : 'currentColor'}
           aria-hidden="true"
         >
           <path
@@ -198,9 +198,9 @@ const Nav = () => {
 
   return (
     <>
-      <Announcement link="/launch-week">
+      {/* <Announcement link="/launch-week">
         <LW8CountdownBanner />
-      </Announcement>
+      </Announcement> */}
       <div className="sticky top-0 z-40 transform" style={{ transform: 'translate3d(0,0,999px)' }}>
         <div
           className={[
@@ -236,13 +236,13 @@ const Nav = () => {
                     </a>
                   </Link>
 
-                  {isLaunchWeekPage && (
+                  {/* {isLaunchWeekPage && (
                     <Link href="/launch-week" as="/launch-week">
                       <a className="hidden ml-2 xl:block font-mono text-sm uppercase leading-4">
                         Launch Week
                       </a>
                     </Link>
-                  )}
+                  )} */}
                 </div>
                 <div className="hidden pl-4 sm:ml-6 sm:space-x-4 lg:flex">
                   <FlyOutNavButton
@@ -279,7 +279,7 @@ const Nav = () => {
                       Docs
                     </a>
                   </Link>
-                  <Link href="/blog">
+                  {/* <Link href="/blog">
                     <a
                       className={[
                         `text-scale-1200 hover:text-brand hover:border-brand dark:text-dark-100 dark:hover:border-dark-100 inline-flex items-center
@@ -290,11 +290,11 @@ const Nav = () => {
                     >
                       Blog
                     </a>
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
               <div className="flex items-center gap-2">
-                <a href="https://github.com/supabase/supabase" target="_blank">
+                <a href="https://uk.trustpilot.com/review/www.abcloudsolutions.com" target="_blank">
                   <Button
                     className="hidden group lg:flex"
                     type="text"
@@ -323,7 +323,7 @@ const Nav = () => {
                     <span
                     // className={isLaunchWeekPage ? '!text-white' : ''}
                     >
-                      Star us on GitHub
+                      Rate us on Trustpilot
                     </span>
                   </Button>
                 </a>
@@ -343,11 +343,11 @@ const Nav = () => {
                         </Button>
                       </a>
                     </Link>
-                    <Link href="https://supabase.com/dashboard">
+                    {/* <Link href="https://supabase.com/dashboard">
                       <a>
                         <Button className="hidden text-white lg:block">Start your project</Button>
                       </a>
-                    </Link>
+                    </Link> */}
                   </>
                 )}
               </div>
@@ -430,22 +430,22 @@ const Nav = () => {
                       Docs
                     </a>
                   </Link>
-                  <Link href="https://github.com/supabase/supabase">
+                  <Link href="https://uk.trustpilot.com/review/www.abcloudsolutions.com">
                     <a
                       target="_blank"
                       className="block py-2 pl-3 pr-4 text-base font-medium rounded-md text-scale-900 dark:hover:bg-scale-600 hover:border-gray-300 hover:bg-gray-50 dark:text-white"
                     >
-                      GitHub
+                      Trustpilot
                     </a>
                   </Link>
-                  <Link href="/blog">
+                  {/* <Link href="/blog">
                     <a
                       target="_blank"
                       className="block py-2 pl-3 pr-4 text-base font-medium rounded-md text-scale-900 dark:hover:bg-scale-600 hover:border-gray-300 hover:bg-gray-50 dark:text-white"
                     >
                       Blog
                     </a>
-                  </Link>
+                  </Link> */}
                 </div>
                 <div className="p-3">
                   <p className="mb-6 text-sm text-scale-900">Products available:</p>

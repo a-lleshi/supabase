@@ -92,26 +92,26 @@ export default function IndexPage() {
     priceDescription,
     price,
     plan,
-    showDollarSign = true,
+    showPoundSign = true,
     from = false,
   }: {
     description: string
     priceDescription: string
     price: string
     plan: string
-    showDollarSign?: boolean
+    showPoundSign?: boolean
     from?: boolean
   }) => {
     return (
-      <div className="mt-8 px-4 mobile-header">
+      <div className="mt-8 px-3 mobile-header">
         <h2 className="text-brand-600 dark:text-brand text-3xl font-medium uppercase font-mono">
           {plan}
         </h2>
         <div className="flex items-baseline gap-2">
           {from && <span className="text-scale-1200 text-base">From</span>}
-          {showDollarSign ? (
+          {showPoundSign ? (
             <span className="h1">
-              {plan !== 'Enterprise' ? '$' : ''}
+              {plan !== 'Enterprise' ? '£' : ''}
               {price}
             </span>
           ) : (
@@ -154,9 +154,9 @@ export default function IndexPage() {
           <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
             <div className="mx-auto max-w-3xl space-y-2 lg:max-w-none">
               <h1 className="text-brand text-base">Pricing</h1>
-              <h2 className="h1">Predictable pricing, no surprises</h2>
+              <h2 className="h1">Transparent pricing, hassle free </h2>
               <p className="p text-lg">
-                Start building for free, collaborate with a team, then scale to millions of users.
+                Start today with our basic plan and scale up as you grow. No hidden fees, no lock-in.
               </p>
             </div>
           </div>
@@ -171,7 +171,7 @@ export default function IndexPage() {
             lg:px-8
           "
           >
-            <div className="mx-auto max-w-md grid lg:max-w-none lg:grid-cols-2 xl:grid-cols-4 gap-4 xl:gap-2 2xl:gap-5">
+            <div className="mx-auto max-w-md grid lg:max-w-none lg:grid-cols-2 xl:grid-cols-3 gap-3 xl:gap-2 2xl:gap-5">
               {plans.map((plan) => (
                 <div
                   key={`row-${plan.name}`}
@@ -243,7 +243,7 @@ export default function IndexPage() {
                                     plan.name !== 'Enterprise' ? 'text-5xl' : 'text-4xl'
                                   }`}
                                 >
-                                  {plan.name !== 'Enterprise' ? '$' : ''}
+                                  {plan.name !== 'Enterprise' ? '£' : ''}
                                   {plan.priceMonthly}
                                 </p>
                                 <p className="text-scale-900 mb-1.5 ml-1 text-[13px] leading-4">
@@ -460,10 +460,10 @@ export default function IndexPage() {
                     description={'Perfect for hobby projects and experiments'}
                   />
                   <PricingTableRowMobile
-                    category={pricing.database}
+                    category={pricing.hosteddesktop}
                     plan={'free'}
-                    icon={Solutions['database'].icon}
-                    sectionId="database"
+                    icon={Solutions['hosteddesktop'].icon}
+                    sectionId="hosteddesktop"
                   />
                   <PricingTableRowMobile
                     category={pricing.auth}
@@ -520,9 +520,9 @@ export default function IndexPage() {
                     description={'Everything you need to scale your project into production'}
                   />
                   <PricingTableRowMobile
-                    category={pricing.database}
+                    category={pricing.hosteddesktop}
                     plan={'pro'}
-                    icon={Solutions['database'].icon}
+                    icon={Solutions['hosteddesktop'].icon}
                   />
                   <PricingTableRowMobile
                     category={pricing.auth}
@@ -572,9 +572,9 @@ export default function IndexPage() {
                     description={'Collaborate with different permissions and access patterns'}
                   />
                   <PricingTableRowMobile
-                    category={pricing.database}
+                    category={pricing.hosteddesktop}
                     plan={'team'}
-                    icon={Solutions['database'].icon}
+                    icon={Solutions['hosteddesktop'].icon}
                   />
                   <PricingTableRowMobile
                     category={pricing.auth}
@@ -623,12 +623,12 @@ export default function IndexPage() {
                     description={
                       'Designated support team, account manager and technical specialist'
                     }
-                    showDollarSign={false}
+                    showPoundSign={false}
                   />
                   <PricingTableRowMobile
-                    category={pricing.database}
+                    category={pricing.hosteddesktop}
                     plan={'enterprise'}
-                    icon={Solutions['database'].icon}
+                    icon={Solutions['hosteddesktop'].icon}
                   />
                   <PricingTableRowMobile
                     category={pricing.auth}
@@ -740,7 +740,7 @@ export default function IndexPage() {
                                   plan.name !== 'Enterprise' ? 'text-5xl' : 'text-4xl'
                                 }`}
                               >
-                                {plan.name !== 'Enterprise' && '$'}
+                                {plan.name !== 'Enterprise' && '£'}
                                 {plan.priceMonthly}
                               </span>
                               {['Pro', 'Free'].includes(plan.name) && (
@@ -779,9 +779,9 @@ export default function IndexPage() {
                   </tr>
 
                   <PricingTableRowDesktop
-                    category={pricing.database}
-                    icon={Solutions['database'].icon}
-                    sectionId="database"
+                    category={pricing.hosteddesktop}
+                    icon={Solutions['hosteddesktop'].icon}
+                    sectionId="hosteddesktop"
                   />
                   <PricingTableRowDesktop
                     category={pricing.auth}
