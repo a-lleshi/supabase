@@ -250,11 +250,11 @@ const Nav = () => {
                     onClick={() => handleToggle(() => setOpenProduct(!openProduct))}
                     active={openProduct}
                   />
-                  <FlyOutNavButton
+                  {/* <FlyOutNavButton
                     title={'Developers'}
                     onClick={() => handleToggle(() => setOpenDevelopers(!openDevelopers))}
                     active={openDevelopers}
-                  />
+                  /> */}
                   <Link href="/pricing">
                     <a
                       className={[
@@ -407,11 +407,11 @@ const Nav = () => {
                   </Link>
                 </div>
                 <div className="pt-2 pb-4 space-y-1">
-                  <Link href="/docs">
+                  {/* <Link href="/docs">
                     <a className="block py-2 pl-3 pr-4 text-base font-medium rounded-md text-scale-900 dark:hover:bg-scale-600 hover:border-gray-300 hover:bg-gray-50 dark:text-white">
                       Developers
                     </a>
-                  </Link>
+                  </Link> */}
                   <Link href="/company">
                     <a className="block py-2 pl-3 pr-4 text-base font-medium rounded-md text-scale-900 dark:hover:bg-scale-600 hover:border-gray-300 hover:bg-gray-50 dark:text-white">
                       Company
@@ -458,9 +458,9 @@ const Nav = () => {
         <FlyOut open={openProduct} handleCancel={handleCancel}>
           <Solutions />
         </FlyOut>
-        <FlyOut open={openDevelopers} handleCancel={handleCancel}>
+        {/* <FlyOut open={openDevelopers} handleCancel={handleCancel}>
           <Developers />
-        </FlyOut>
+        </FlyOut> */}
         <ScrollProgress />
       </div>
     </>
