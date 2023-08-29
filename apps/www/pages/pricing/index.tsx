@@ -432,7 +432,7 @@ export default function IndexPage() {
             {/* <!-- xs to lg --> */}
 
             <div className="lg:hidden">
-              {/* Free - Mobile  */}
+              {/* Basic - Mobile  */}
               <div className="bg-slate-200 p-2 sticky top-14 z-10 pt-4">
                 <div className="bg-slate-300 rounded-lg border border-slate-500 py-2 px-4 flex justify-between items-center">
                   <label className="text-scale-1000">Change plan</label>
@@ -444,66 +444,66 @@ export default function IndexPage() {
                     className="min-w-[120px] bg-slate-400 text-red-500"
                     onChange={(e) => setActiveMobilePlan(e.target.value)}
                   >
-                    <Select.Option value="Free">Free</Select.Option>
+                    <Select.Option value="Basic">Basic</Select.Option>
                     <Select.Option value="Pro">Pro</Select.Option>
-                    <Select.Option value="Team">Team</Select.Option>
+                    {/* <Select.Option value="Team">Team</Select.Option> */}
                     <Select.Option value="Enterprise">Enterprise</Select.Option>
                   </Select>
                 </div>
               </div>
-              {activeMobilePlan === 'Free' && (
+              {activeMobilePlan === 'Basic' && (
                 <>
                   <MobileHeader
-                    plan="Free"
+                    plan="Basic"
                     price={'0'}
                     priceDescription={'/mo'}
                     description={'Perfect for hobby projects and experiments'}
                   />
                   <PricingTableRowMobile
                     category={pricing.hosteddesktop}
-                    plan={'free'}
+                    plan={'Basic'}
                     icon={Solutions['hosteddesktop'].icon}
                     sectionId="hosteddesktop"
                   />
                   <PricingTableRowMobile
                     category={pricing.auth}
-                    plan={'free'}
+                    plan={'Basic'}
                     icon={Solutions['authentication'].icon}
                     sectionId="auth"
                   />
                   <PricingTableRowMobile
                     category={pricing.storage}
-                    plan={'free'}
+                    plan={'Basic'}
                     icon={Solutions['storage'].icon}
                     sectionId="storage"
                   />
                   <PricingTableRowMobile
                     category={pricing.realtime}
-                    plan={'free'}
+                    plan={'Basic'}
                     icon={Solutions['realtime'].icon}
                     sectionId="realtime"
                   />
                   <PricingTableRowMobile
                     category={pricing['edge_functions']}
-                    plan={'free'}
+                    plan={'Basic'}
                     icon={Solutions['functions'].icon}
                     sectionId="edge-functions"
                   />
                   <PricingTableRowMobile
                     category={pricing.dashboard}
-                    plan={'free'}
+                    plan={'Basic'}
                     icon={pricing.dashboard.icon}
                     sectionId="dashboard"
                   />
                   <PricingTableRowMobile
                     category={pricing.security}
-                    plan={'free'}
+                    plan={'Basic'}
                     icon={pricing.security.icon}
                     sectionId="security"
                   />
                   <PricingTableRowMobile
                     category={pricing.support}
-                    plan={'free'}
+                    plan={'Basic'}
                     icon={pricing.support.icon}
                     sectionId="support"
                   />
@@ -562,7 +562,7 @@ export default function IndexPage() {
                 </>
               )}
 
-              {activeMobilePlan === 'Team' && (
+              {/* {activeMobilePlan === 'Team' && (
                 <>
                   <MobileHeader
                     plan="Team"
@@ -612,7 +612,7 @@ export default function IndexPage() {
                     icon={pricing.support.icon}
                   />
                 </>
-              )}
+              )} */}
 
               {activeMobilePlan === 'Enterprise' && (
                 <>
@@ -743,7 +743,7 @@ export default function IndexPage() {
                                 {plan.name !== 'Enterprise' && '£'}
                                 {plan.priceMonthly}
                               </span>
-                              {['Pro', 'Free'].includes(plan.name) && (
+                              {['Pro', 'Basic'].includes(plan.name) && (
                                 <p className="p text-[13px] leading-4 mt-1">per month</p>
                               )}
                               {['Team'].includes(plan.name) && (
@@ -850,7 +850,7 @@ export default function IndexPage() {
                         </a>
                       </Link>
                     </td>
-
+{/* 
                     <td className="px-6 pt-5">
                       <Link href="https://forms.supabase.com/team">
                         <a>
@@ -859,7 +859,7 @@ export default function IndexPage() {
                           </Button>
                         </a>
                       </Link>
-                    </td>
+                    </td> */}
 
                     <td className="px-6 pt-5">
                       <Link href="https://forms.supabase.com/enterprise">

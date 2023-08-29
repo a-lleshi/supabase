@@ -21,7 +21,7 @@ type PricingFeature = {
   plans: {
     free: boolean | string
     pro: boolean | string
-    team: boolean | string
+    // team: boolean | string
     enterprise: boolean | string
   }
   usage_based: boolean
@@ -40,7 +40,7 @@ export const pricing: Pricing = {
         plans: {
           free: true,
           pro: true,
-          team: true,
+          // team: true,
           enterprise: true,
         },
         usage_based: false,
@@ -50,7 +50,7 @@ export const pricing: Pricing = {
         plans: {
           free: true,
           pro: true,
-          team: true,
+          // team: true,
           enterprise: true,
         },
         usage_based: false,
@@ -63,7 +63,7 @@ export const pricing: Pricing = {
         plans: {
           free: '500 MB included',
           pro: '8 GB included, then $0.125 per GB',
-          team: '8 GB included, then $0.125 per GB',
+          // team: '8 GB included, then $0.125 per GB',
           enterprise: 'Unlimited',
         },
         usage_based: true,
@@ -73,12 +73,12 @@ export const pricing: Pricing = {
         tooltips: {
           main: 'Backups are entire copies of your database that can be restored in the future.',
           pro: '7 days of backup (if > 1TB, contact for Enterprise pricing)',
-          team: '14 days of backup (if > 1TB, contact for Enterprise pricing)',
+          // team: '14 days of backup (if > 1TB, contact for Enterprise pricing)',
         },
         plans: {
           free: false,
           pro: '7 days',
-          team: '14 days',
+          // team: '14 days',
           enterprise: 'Custom',
         },
         usage_based: false,
@@ -88,12 +88,12 @@ export const pricing: Pricing = {
         tooltips: {
           main: 'PITR cannot be applied retroactively, projects can only be rolled back to the point from which PITR has been applied.',
           pro: '$100 per 7 days. If > 28 day rollback period, contact enterprise',
-          team: '$100 per 7 days. If > 28 day rollback period, contact enterprise',
+          // team: '$100 per 7 days. If > 28 day rollback period, contact enterprise',
         },
         plans: {
           free: false,
           pro: '$100 per 7 days',
-          team: '$100 per 7 days',
+          // team: '$100 per 7 days',
           enterprise: true,
         },
         usage_based: false,
@@ -106,7 +106,7 @@ export const pricing: Pricing = {
         plans: {
           free: 'After 1 inactive week',
           pro: 'Never',
-          team: 'Never',
+          // team: 'Never',
           enterprise: 'Never',
         },
         usage_based: false,
@@ -119,7 +119,7 @@ export const pricing: Pricing = {
         plans: {
           free: '2GB included',
           pro: '50 GB included, then $0.09 per GB',
-          team: '50 GB included, then $0.09 per GB',
+          // team: '50 GB included, then $0.09 per GB',
           enterprise: 'Unlimited',
         },
         usage_based: true,
@@ -136,7 +136,7 @@ export const pricing: Pricing = {
         plans: {
           free: 'Unlimited',
           pro: 'Unlimited',
-          team: 'Unlimited',
+          // team: 'Unlimited',
           enterprise: 'Unlimited',
         },
         usage_based: false,
@@ -149,7 +149,7 @@ export const pricing: Pricing = {
         plans: {
           free: '50,000 included',
           pro: '100,000 included, then $0.00325 per MAU',
-          team: '100,000 included, then $0.00325 per MAU',
+          // team: '100,000 included, then $0.00325 per MAU',
           enterprise: 'Unlimited',
         },
         usage_based: true,
@@ -159,7 +159,7 @@ export const pricing: Pricing = {
         plans: {
           free: true,
           pro: true,
-          team: true,
+          // team: true,
           enterprise: true,
         },
         usage_based: false,
@@ -169,7 +169,7 @@ export const pricing: Pricing = {
         plans: {
           free: true,
           pro: true,
-          team: true,
+          // team: true,
           enterprise: true,
         },
         usage_based: false,
@@ -179,7 +179,7 @@ export const pricing: Pricing = {
         plans: {
           free: false,
           pro: true,
-          team: true,
+          // team: true,
           enterprise: true,
         },
         usage_based: false,
@@ -189,7 +189,7 @@ export const pricing: Pricing = {
         plans: {
           free: false,
           pro: false,
-          team: false,
+          // team: false,
           enterprise: true,
         },
         usage_based: false,
@@ -199,7 +199,7 @@ export const pricing: Pricing = {
         plans: {
           free: '1 hour',
           pro: '7 days',
-          team: '28 days',
+          // team: '28 days',
           enterprise: true,
         },
         usage_based: false,
@@ -209,7 +209,7 @@ export const pricing: Pricing = {
         plans: {
           free: false,
           pro: '50 included, then $0.015 per MAU',
-          team: '50 included, then $0.015 per MAU',
+          // team: '50 included, then $0.015 per MAU',
           enterprise: 'Contact Us',
         },
         usage_based: false,
@@ -219,7 +219,7 @@ export const pricing: Pricing = {
         plans: {
           free: false,
           pro: false,
-          team: false,
+          // team: false,
           enterprise: 'Contact Us',
         },
         usage_based: false,
@@ -239,7 +239,7 @@ export const pricing: Pricing = {
         plans: {
           free: '1 GB included',
           pro: '100 GB included, then $0.021 per GB',
-          team: '100 GB included, then $0.021 per GB',
+          // team: '100 GB included, then $0.021 per GB',
           enterprise: 'Unlimited',
         },
         usage_based: true,
@@ -252,7 +252,7 @@ export const pricing: Pricing = {
         plans: {
           free: '2 GB included',
           pro: '200 GB included, then $0.09 per GB',
-          team: '200 GB included, then $0.09 per GB',
+          // team: '200 GB included, then $0.09 per GB',
           enterprise: 'Unlimited',
         },
         usage_based: true,
@@ -262,7 +262,7 @@ export const pricing: Pricing = {
         plans: {
           free: true,
           pro: true,
-          team: true,
+          // team: true,
           enterprise: true,
         },
         usage_based: false,
@@ -273,7 +273,7 @@ export const pricing: Pricing = {
         plans: {
           free: '50MB',
           pro: '5GB',
-          team: '5GB',
+          // team: '5GB',
           enterprise: 'Unlimited',
         },
         usage_based: false,
@@ -286,7 +286,7 @@ export const pricing: Pricing = {
         plans: {
           free: false,
           pro: '100 origin images, then $5 per 1000 origin images',
-          team: '100 origin images, then $5 per 1000 origin images',
+          // team: '100 origin images, then $5 per 1000 origin images',
           enterprise: 'Unlimited',
         },
         usage_based: true,
@@ -296,7 +296,7 @@ export const pricing: Pricing = {
         plans: {
           free: false,
           pro: false,
-          team: false,
+          // team: false,
           enterprise: true,
         },
         usage_based: false,
@@ -315,7 +315,7 @@ export const pricing: Pricing = {
         plans: {
           free: '500K/month included',
           pro: '2 Million included, then $2 per 1 Million',
-          team: '2 Million included, then $2 per 1 Million',
+          // team: '2 Million included, then $2 per 1 Million',
           enterprise: 'Unlimited',
         },
         usage_based: true,
@@ -325,7 +325,7 @@ export const pricing: Pricing = {
         plans: {
           free: '2 MB',
           pro: '10 MB',
-          team: '10 MB',
+          // team: '10 MB',
           enterprise: 'Unlimited',
         },
         usage_based: false,
@@ -338,7 +338,7 @@ export const pricing: Pricing = {
         plans: {
           free: '10 included',
           pro: '100 included, then $10 per additional 100',
-          team: '100 included, then $10 per additional 100',
+          // team: '100 included, then $10 per additional 100',
           enterprise: 'Unlimited',
         },
         usage_based: true,
@@ -354,7 +354,7 @@ export const pricing: Pricing = {
         plans: {
           free: true,
           pro: true,
-          team: true,
+          // team: true,
           enterprise: true,
         },
         usage_based: false,
@@ -367,7 +367,7 @@ export const pricing: Pricing = {
         plans: {
           free: '200 included',
           pro: '500 included, then $10 per 1000',
-          team: '500 included, then $10 per 1000',
+          // team: '500 included, then $10 per 1000',
           enterprise: 'Unlimited concurrent connections and volume discount',
         },
         usage_based: true,
@@ -380,7 +380,7 @@ export const pricing: Pricing = {
         plans: {
           free: '2 Million included',
           pro: '5 Million included, then $2.50 per Million',
-          team: '5 Million included, then $2.50 per Million',
+          // team: '5 Million included, then $2.50 per Million',
           enterprise: 'Volume discounts on messages',
         },
         usage_based: true,
@@ -390,7 +390,7 @@ export const pricing: Pricing = {
         plans: {
           free: '250 KB',
           pro: '3 MB',
-          team: '3 MB',
+          // team: '3 MB',
           enterprise: 'Custom',
         },
         usage_based: false,
@@ -406,7 +406,7 @@ export const pricing: Pricing = {
         plans: {
           free: 'Unlimited',
           pro: 'Unlimited',
-          team: 'Unlimited',
+          // team: 'Unlimited',
           enterprise: 'Unlimited',
         },
         usage_based: false,
@@ -416,7 +416,7 @@ export const pricing: Pricing = {
         plans: {
           free: 'Coming soon',
           pro: 'Coming soon',
-          team: true,
+          // team: true,
           enterprise: true,
         },
         usage_based: false,
@@ -426,7 +426,7 @@ export const pricing: Pricing = {
         plans: {
           free: false,
           pro: false,
-          team: true,
+          // team: true,
           enterprise: true,
         },
         usage_based: false,
@@ -442,7 +442,7 @@ export const pricing: Pricing = {
         plans: {
           free: false,
           pro: false,
-          team: false,
+          // team: false,
           enterprise: true,
         },
         usage_based: false,
@@ -452,7 +452,7 @@ export const pricing: Pricing = {
         plans: {
           free: '1 day',
           pro: '7 days',
-          team: '28 days',
+          // team: '28 days',
           enterprise: '90 days',
         },
         usage_based: false,
@@ -462,7 +462,7 @@ export const pricing: Pricing = {
         plans: {
           free: false,
           pro: false,
-          team: 'Coming soon',
+          // team: 'Coming soon',
           enterprise: 'Coming soon',
         },
         usage_based: false,
@@ -472,7 +472,7 @@ export const pricing: Pricing = {
         plans: {
           free: false,
           pro: true,
-          team: true,
+          // team: true,
           enterprise: true,
         },
         usage_based: false,
@@ -482,7 +482,7 @@ export const pricing: Pricing = {
         plans: {
           free: false,
           pro: false,
-          team: true,
+          // team: true,
           enterprise: true,
         },
         usage_based: false,
@@ -492,7 +492,7 @@ export const pricing: Pricing = {
         plans: {
           free: false,
           pro: false,
-          team: true,
+          // team: true,
           enterprise: true,
         },
         tooltips: {
@@ -505,7 +505,7 @@ export const pricing: Pricing = {
         plans: {
           free: false,
           pro: false,
-          team: 'Contact Us',
+          // team: 'Contact Us',
           enterprise: 'Contact Us',
         },
         usage_based: false,
@@ -515,7 +515,7 @@ export const pricing: Pricing = {
         plans: {
           free: false,
           pro: false,
-          team: false,
+          // team: false,
           enterprise: true,
         },
         usage_based: false,
@@ -525,7 +525,7 @@ export const pricing: Pricing = {
         plans: {
           free: 'Owner, Developer',
           pro: 'Owner, Developer',
-          team: 'Additional owner(s), admin, read-only, billing admin, custom',
+          // team: 'Additional owner(s), admin, read-only, billing admin, custom',
           enterprise: 'Additional owner(s), admin, read-only, billing admin, custom',
         },
         usage_based: false,
@@ -535,7 +535,7 @@ export const pricing: Pricing = {
         plans: {
           free: false,
           pro: true,
-          team: true,
+          // team: true,
           enterprise: true,
         },
         usage_based: false,
@@ -548,7 +548,7 @@ export const pricing: Pricing = {
         plans: {
           free: false,
           pro: '$10 per domain per month per project add on',
-          team: '$10 per domain per month per project add on',
+          // team: '$10 per domain per month per project add on',
           enterprise: '1, additional $10/domain/month',
         },
         usage_based: false,
@@ -561,7 +561,7 @@ export const pricing: Pricing = {
         plans: {
           free: false,
           pro: false,
-          team: false,
+          // team: false,
           enterprise: true,
         },
         usage_based: false,
@@ -577,7 +577,7 @@ export const pricing: Pricing = {
         plans: {
           free: true,
           pro: true,
-          team: true,
+          // team: true,
           enterprise: true,
         },
         usage_based: false,
@@ -587,7 +587,7 @@ export const pricing: Pricing = {
         plans: {
           free: false,
           pro: true,
-          team: true,
+          // team: true,
           enterprise: true,
         },
         usage_based: false,
@@ -597,7 +597,7 @@ export const pricing: Pricing = {
         plans: {
           free: false,
           pro: false,
-          team: true,
+          // team: true,
           enterprise: true,
         },
         usage_based: false,
@@ -607,7 +607,7 @@ export const pricing: Pricing = {
         plans: {
           free: false,
           pro: false,
-          team: false,
+          // team: false,
           enterprise: true,
         },
         usage_based: false,
@@ -617,7 +617,7 @@ export const pricing: Pricing = {
         plans: {
           free: false,
           pro: false,
-          team: false,
+          // team: false,
           enterprise: true,
         },
         usage_based: false,
@@ -627,7 +627,7 @@ export const pricing: Pricing = {
         plans: {
           free: false,
           pro: false,
-          team: false,
+          // team: false,
           enterprise: true,
         },
         usage_based: false,
@@ -637,7 +637,7 @@ export const pricing: Pricing = {
         plans: {
           free: false,
           pro: false,
-          team: true,
+          // team: true,
           enterprise: true,
         },
         usage_based: false,

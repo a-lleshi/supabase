@@ -23,9 +23,9 @@ export const PricingTableRowDesktop = (props: any) => {
             <h4 className="m-0 text-base font-normal">{category.title}</h4>
           </div>
         </th>
-        <td className="border-b-2 border-scale-700 bg-scale-50 dark:bg-scale-200 px-6 py-5 free"></td>
+        <td className="border-b-2 border-scale-700 bg-scale-50 dark:bg-scale-200 px-6 py-5 basic"></td>
         <td className="border-b-2 border-scale-700 bg-scale-50 dark:bg-scale-200 px-6 py-5 pro"></td>
-        <td className="border-b-2 border-scale-700 bg-scale-50 dark:bg-scale-200 px-6 py-5 team"></td>
+        {/* <td className="border-b-2 border-scale-700 bg-scale-50 dark:bg-scale-200 px-6 py-5 team"></td> */}
         <td className="border-b-2 border-scale-700 bg-scale-50 dark:bg-scale-200 px-6 py-5 enterprise"></td>
       </tr>
 
