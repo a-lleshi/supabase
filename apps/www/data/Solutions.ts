@@ -4,25 +4,25 @@ import { PRODUCT_NAMES, PRODUCT_SHORTNAMES } from 'shared-data/products'
 const solutions = {
   [PRODUCT_SHORTNAMES.HOSTEDDESKTOP]: {
     name: PRODUCT_NAMES.HOSTEDDESKTOP,
-    icon: products.hosteddesktop.icon[24],
+    icon: products.desktop.icon[24],
     description:
       "A windows or linux server hosted on the cloud. Access your data any where any time with just an internet connection.",
     description_short: '',
     label: '',
     url: '/desktop',
   },
-  [PRODUCT_SHORTNAMES.AUTHENTICATION]: {
-    name: PRODUCT_NAMES.AUTHENTICATION,
-    icon: products.authentication.icon[24],
-    description: 'Add user sign ups and logins, securing your data with Row Level Security.',
+  [PRODUCT_SHORTNAMES.UNICOM]: {
+    name: PRODUCT_NAMES.UNICOM,
+    icon: products.communications.icon[24],
+    description: 'Combining business communications such as telephony, instant messaging, and video conferencing on one streamlined platform',
     description_short: '',
     label: '',
     url: '/soon',
   },
-  [PRODUCT_SHORTNAMES.STORAGE]: {
-    name: PRODUCT_NAMES.STORAGE,
-    icon: products.storage.icon[24],
-    description: 'Store, organize, and serve large files. Any media, including videos and images.',
+  [PRODUCT_SHORTNAMES.OFFICE365]: {
+    name: PRODUCT_NAMES.OFFICE365,
+    icon: products.office365.icon[24],
+    description: 'Boost productivity with Microsoft Word, Excel, PowerPoint, Microsoft Teams, and more — all in one place',
     description_short: '',
     label: '',
     url: '/soon',

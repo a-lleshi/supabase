@@ -460,22 +460,22 @@ export default function IndexPage() {
                     description={'Perfect for hobby projects and experiments'}
                   />
                   <PricingTableRowMobile
-                    category={pricing.hosteddesktop}
+                    category={pricing.desktop}
                     plan={'Basic'}
-                    icon={Solutions['hosteddesktop'].icon}
-                    sectionId="hosteddesktop"
+                    icon={Solutions['desktop'].icon}
+                    sectionId="desktop"
                   />
                   <PricingTableRowMobile
-                    category={pricing.auth}
+                    category={pricing.communications}
                     plan={'Basic'}
-                    icon={Solutions['authentication'].icon}
-                    sectionId="auth"
+                    icon={Solutions['communications'].icon}
+                    sectionId="communications"
                   />
                   <PricingTableRowMobile
-                    category={pricing.storage}
+                    category={pricing.office365}
                     plan={'Basic'}
-                    icon={Solutions['storage'].icon}
-                    sectionId="storage"
+                    icon={Solutions['office365'].icon}
+                    sectionId="office365"
                   />
                   {/* <PricingTableRowMobile
                     category={pricing.realtime}
@@ -520,19 +520,19 @@ export default function IndexPage() {
                     description={'Everything you need to scale your project into production'}
                   />
                   <PricingTableRowMobile
-                    category={pricing.hosteddesktop}
+                    category={pricing.desktop}
                     plan={'pro'}
-                    icon={Solutions['hosteddesktop'].icon}
+                    icon={Solutions['desktop'].icon}
                   />
                   <PricingTableRowMobile
-                    category={pricing.auth}
+                    category={pricing.communications}
                     plan={'pro'}
-                    icon={Solutions['authentication'].icon}
+                    icon={Solutions['communications'].icon}
                   />
                   <PricingTableRowMobile
-                    category={pricing.storage}
+                    category={pricing.office365}
                     plan={'pro'}
-                    icon={Solutions['storage'].icon}
+                    icon={Solutions['office365'].icon}
                   />
                   {/* <PricingTableRowMobile
                     category={pricing.realtime}
@@ -626,19 +626,19 @@ export default function IndexPage() {
                     showPoundSign={false}
                   />
                   <PricingTableRowMobile
-                    category={pricing.hosteddesktop}
+                    category={pricing.desktop}
                     plan={'enterprise'}
-                    icon={Solutions['hosteddesktop'].icon}
+                    icon={Solutions['desktop'].icon}
                   />
                   <PricingTableRowMobile
-                    category={pricing.auth}
+                    category={pricing.communications}
                     plan={'enterprise'}
-                    icon={Solutions['authentication'].icon}
+                    icon={Solutions['communications'].icon}
                   />
                   <PricingTableRowMobile
-                    category={pricing.storage}
+                    category={pricing.office365}
                     plan={'enterprise'}
-                    icon={Solutions['storage'].icon}
+                    icon={Solutions['office365'].icon}
                   />
                   {/* <PricingTableRowMobile
                     category={pricing.realtime}
@@ -779,18 +779,18 @@ export default function IndexPage() {
                   </tr>
 
                   <PricingTableRowDesktop
-                    category={pricing.hosteddesktop}
-                    icon={Solutions['hosteddesktop'].icon}
-                    sectionId="hosteddesktop"
+                    category={pricing.desktop}
+                    icon={Solutions['desktop'].icon}
+                    sectionId="desktop"
                   />
                   <PricingTableRowDesktop
-                    category={pricing.auth}
-                    icon={Solutions['authentication'].icon}
-                    sectionId="auth"
+                    category={pricing.communications}
+                    icon={Solutions['communications'].icon}
+                    sectionId="communications"
                   />
                   <PricingTableRowDesktop
-                    category={pricing.storage}
-                    icon={Solutions['storage'].icon}
+                    category={pricing.office365}
+                    icon={Solutions['office365'].icon}
                     sectionId="storage"
                   />
                   {/* <PricingTableRowDesktop
