@@ -81,7 +81,7 @@ const HeroFrameworks = ({ className }: { className?: string }) => {
       <div className="w-full sm:max-w-lg mt-4 md:mt-3 lg:ml-0">
         <div className="flex flex-wrap items-center justify-center gap-1 xs:gap-2 sm:flex-nowrap">
 
-          <Link href="https://calendly.com/sales-computify" as="https://calendly.com/sales-computify">
+          <Link href="https://calendly.com/computify-sales" as="https://calendly.com/computify-sales">
             <a>
               <Button size="small" className="text-white">
                 Book an appointment!
