@@ -316,7 +316,7 @@ export default function IndexPage() {
         </div>
       </div>
 
-      <div
+      {/* <div
         id="addons"
         className="sm:py-18 container relative mx-auto px-4 py-16 shadow-sm md:py-24 lg:px-12 lg:pt-32 lg:pb-12"
       >
@@ -415,7 +415,7 @@ export default function IndexPage() {
             />
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="bg-scale-200">
         <div className="sm:py-18 container relative mx-auto px-4 py-16 md:py-24 lg:px-16 lg:py-24 xl:px-20">
@@ -477,12 +477,12 @@ export default function IndexPage() {
                     icon={Solutions['storage'].icon}
                     sectionId="storage"
                   />
-                  <PricingTableRowMobile
+                  {/* <PricingTableRowMobile
                     category={pricing.realtime}
                     plan={'Basic'}
                     icon={Solutions['realtime'].icon}
                     sectionId="realtime"
-                  />
+                  /> */}
                   <PricingTableRowMobile
                     category={pricing['edge_functions']}
                     plan={'Basic'}
@@ -534,11 +534,11 @@ export default function IndexPage() {
                     plan={'pro'}
                     icon={Solutions['storage'].icon}
                   />
-                  <PricingTableRowMobile
+                  {/* <PricingTableRowMobile
                     category={pricing.realtime}
                     plan={'pro'}
                     icon={Solutions['realtime'].icon}
-                  />
+                  /> */}
                   <PricingTableRowMobile
                     category={pricing['edge_functions']}
                     plan={'pro'}
@@ -640,11 +640,11 @@ export default function IndexPage() {
                     plan={'enterprise'}
                     icon={Solutions['storage'].icon}
                   />
-                  <PricingTableRowMobile
+                  {/* <PricingTableRowMobile
                     category={pricing.realtime}
                     plan={'enterprise'}
                     icon={Solutions['realtime'].icon}
-                  />
+                  /> */}
                   <PricingTableRowMobile
                     category={pricing['edge_functions']}
                     plan={'enterprise'}
@@ -793,11 +793,11 @@ export default function IndexPage() {
                     icon={Solutions['storage'].icon}
                     sectionId="storage"
                   />
-                  <PricingTableRowDesktop
+                  {/* <PricingTableRowDesktop
                     category={pricing.realtime}
                     icon={Solutions['realtime'].icon}
                     sectionId="realtime"
-                  />
+                  /> */}
                   <PricingTableRowDesktop
                     category={pricing['edge_functions']}
                     icon={Solutions['functions'].icon}
