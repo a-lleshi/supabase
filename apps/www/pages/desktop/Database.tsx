@@ -41,9 +41,9 @@ function Database() {
     dashboardSwiper.slideTo(e)
   }
 
-  const meta_title = 'Database | Open source SQL Database'
+  const meta_title = 'Hosted Desktop | Store your data on the cloud'
   const meta_description =
-    'With supabase’s APIs and easy to use dashboard, it makes designing relational databases easy.'
+    'With computify hosted desktops you can store your data, programs either in windows or linux on the cloud and access it from anywhere.'
 
   return (
     <>
@@ -63,12 +63,12 @@ function Database() {
       />
       <DefaultLayout>
         <ProductHeader
-          icon={Solutions['database'].icon}
-          title={Solutions['database'].name}
-          h1={[
+          icon={Solutions['hosteddesktop'].icon}
+          title={Solutions['hosteddesktop'].name}
+          h2={[
             <span key={'database-h1'}>
-              Open Source SQL Database
-              <br /> (without the hassle)
+              Your storage, programs and desktop 
+              <br />  - on the cloud ☁️
             </span>,
           ]}
           subheader={[
@@ -102,7 +102,7 @@ function Database() {
           <div className="grid grid-cols-12">
             <div className="col-span-12 mb-10 lg:col-span-3 lg:mb-0">
               <div className="p mb-4 flex items-center space-x-2">
-                <ProductIcon icon={Solutions['database'].icon} />
+                <ProductIcon icon={Solutions['hosteddesktop'].icon} />
                 <IconX />
                 <div className="flex w-fit items-center">
                   <Image
@@ -121,7 +121,7 @@ function Database() {
             </div>
             <div className="col-span-12 mb-10 lg:col-span-3 lg:col-start-5 lg:mb-0">
               <div className="p mb-4 flex items-center space-x-2">
-                <ProductIcon icon={Solutions['database'].icon} />
+                <ProductIcon icon={Solutions['hosteddesktop'].icon} />
                 <IconX />
                 <ProductIcon icon={Solutions['authentication'].icon} />
               </div>
@@ -135,7 +135,7 @@ function Database() {
             </div>
             <div className="col-span-12 lg:col-span-3 lg:col-start-9">
               <div className="p mb-4 flex items-center space-x-2">
-                <ProductIcon icon={Solutions['database'].icon} />
+                <ProductIcon icon={Solutions['hosteddesktop'].icon} />
                 <IconX />
                 <ProductIcon icon={'M13 10V3L4 14h7v7l9-11h-7z'} />
               </div>

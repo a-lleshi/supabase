@@ -4,7 +4,7 @@ import ProductIcon from '../ProductIcon'
 
 type subheader = string
 interface Types {
-  h1: string | React.ReactNode
+  h2: string | React.ReactNode
   subheader: string[]
   icon?: string
   title?: string
@@ -28,9 +28,9 @@ const ProductHeader = (props: Types) => (
               )}
             </div>
           ) : null}
-          <h1 className="h1" key={`h1`}>
-            {props.h1}
-          </h1>
+          <h2 className="h2" key={`h2`}>
+            {props.h2}
+          </h2>
         </div>
         <div>
           {props.subheader &&

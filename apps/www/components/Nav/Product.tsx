@@ -48,7 +48,7 @@ const Product = () => {
       </nav>
       <div className="col-span-6">
         <div className="m-3 mx-6 flex flex-col items-start">
-          <p className="p">Latest customer stories</p>
+          <p className="p">Latest articles:</p>
           <ul className="mt-6 space-y-3">
             {CustomerStoriesData.map((customer: any, idx: number) => {
               if (idx > 1) {

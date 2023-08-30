@@ -9,7 +9,7 @@ const solutions = {
       "A windows or linux server hosted on the cloud. Access your data any where any time with just an internet connection.",
     description_short: '',
     label: '',
-    url: '/hosted',
+    url: '/desktop',
   },
   [PRODUCT_SHORTNAMES.AUTHENTICATION]: {
     name: PRODUCT_NAMES.AUTHENTICATION,
@@ -17,7 +17,7 @@ const solutions = {
     description: 'Add user sign ups and logins, securing your data with Row Level Security.',
     description_short: '',
     label: '',
-    url: '/auth',
+    url: '/soon',
   },
   [PRODUCT_SHORTNAMES.STORAGE]: {
     name: PRODUCT_NAMES.STORAGE,
@@ -25,7 +25,7 @@ const solutions = {
     description: 'Store, organize, and serve large files. Any media, including videos and images.',
     description_short: '',
     label: '',
-    url: '/storage',
+    url: '/soon',
   },
   [PRODUCT_SHORTNAMES.FUNCTIONS]: {
     name: PRODUCT_NAMES.FUNCTIONS,
@@ -33,25 +33,25 @@ const solutions = {
     description: 'Write custom code without deploying or scaling servers.',
     description_short: '',
     label: '',
-    url: '/edge-functions',
+    url: '/soon',
   },
-  [PRODUCT_SHORTNAMES.REALTIME]: {
-    name: PRODUCT_NAMES.REALTIME,
-    icon: products.realtime.icon[24],
-    description:
-      'Create multiplayer experiences by sharing, broadcasting, and listening to changes from other clients or the Database.',
-    description_short: '',
-    label: '',
-    url: '/realtime',
-  },
-  [PRODUCT_SHORTNAMES.VECTOR]: {
-    name: PRODUCT_NAMES.VECTOR,
-    icon: products.vector.icon[24],
-    description: 'Integrate your favorite ML-models to store, index and search vector embeddings.',
-    description_short: '',
-    label: '',
-    url: '/vector',
-  },
+  // [PRODUCT_SHORTNAMES.REALTIME]: {
+  //   name: PRODUCT_NAMES.REALTIME,
+  //   icon: products.realtime.icon[24],
+  //   description:
+  //     'Create multiplayer experiences by sharing, broadcasting, and listening to changes from other clients or the Database.',
+  //   description_short: '',
+  //   label: '',
+  //   url: '/realtime',
+  // },
+  // [PRODUCT_SHORTNAMES.VECTOR]: {
+  //   name: PRODUCT_NAMES.VECTOR,
+  //   icon: products.vector.icon[24],
+  //   description: 'Integrate your favorite ML-models to store, index and search vector embeddings.',
+  //   description_short: '',
+  //   label: '',
+  //   url: '/vector',
+  // },
 }
 
 export default solutions

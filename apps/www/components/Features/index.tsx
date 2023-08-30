@@ -38,18 +38,18 @@ const Features = () => {
           telemetryProps,
           router
         )
-      case 'Realtime':
-        return await Telemetry.sendEvent(
-          gaEvents['www_hp_subhero_products_realtime'],
-          telemetryProps,
-          router
-        )
-      case 'Vector':
-        return await Telemetry.sendEvent(
-          gaEvents['www_hp_subhero_products_vector'],
-          telemetryProps,
-          router
-        )
+      // case 'Realtime':
+      //   return await Telemetry.sendEvent(
+      //     gaEvents['www_hp_subhero_products_realtime'],
+      //     telemetryProps,
+      //     router
+      //   )
+      // case 'Vector':
+      //   return await Telemetry.sendEvent(
+      //     gaEvents['www_hp_subhero_products_vector'],
+      //     telemetryProps,
+      //     router
+      //   )
     }
   }
 
@@ -83,8 +83,8 @@ const Features = () => {
 
   return (
     <SectionContainer className="space-y-16 pb-0">
-      <h3 className="h3 text-center">Build faster and focus on your products</h3>
-      <dl className="grid grid-cols-1 gap-y-4 sm:grid-cols-2 md:grid-cols-2 md:gap-16 xl:grid-cols-6 lg:gap-x-8">
+      <h3 className="h3 text-center">Build the clienete, whilst we handle the IT</h3>
+      <dl className="grid grid-cols-1 gap-y-4 sm:grid-cols-2 md:grid-cols-2 md:gap-16 xl:grid-cols-4 lg:gap-x-8">
         {IconSections}
       </dl>
     </SectionContainer>

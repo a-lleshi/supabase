@@ -5,6 +5,7 @@ import Telemetry from '~/lib/telemetry'
 import { useTelemetryProps } from 'common/hooks/useTelemetryProps'
 import { useRouter } from 'next/router'
 import { useBreakpoint } from 'common'
+import { Button } from 'ui'
 
 const frameworks = [
   {
@@ -76,10 +77,20 @@ const HeroFrameworks = ({ className }: { className?: string }) => {
 
   return (
     <div className={['flex text-center flex-col items-center', className].join(' ')}>
-      <small className="small !text-scale-1100">Works seamlessly with 20+ frameworks</small>
+      <small className="small !text-scale-1100">Works seamlessly anywhere, anytime with no limitation. Book a 1-on-1 live demo session.</small>
       <div className="w-full sm:max-w-lg mt-4 md:mt-3 lg:ml-0">
         <div className="flex flex-wrap items-center justify-center gap-1 xs:gap-2 sm:flex-nowrap">
-          {frameworks.map((framework) => (
+
+          <Link href="https://calendly.com/sales-computify" as="https://calendly.com/sales-computify">
+            <a>
+              <Button size="small" className="text-white">
+                Book an appointment!
+              </Button>
+            </a>
+          </Link>
+
+
+          {/* {frameworks.map((framework) => (
             <Link href={framework.docs} key={framework.name}>
               <a
                 key={framework.name}
@@ -98,14 +109,14 @@ const HeroFrameworks = ({ className }: { className?: string }) => {
                 </svg>
               </a>
             </Link>
-          ))}
-          <ReactTooltip
+          ))} */}
+          {/* <ReactTooltip
             effect={'solid'}
             place="bottom"
             backgroundColor="#2e2e2e"
             textColor="white"
             className="!py-2 !px-4"
-          />
+          /> */}
         </div>
       </div>
     </div>
