@@ -1,30 +1,30 @@
-[
+[  
   {
-    "question": "Can I cap my usage so my bill doesn't run over?",
-    "answer": "Yes. Spend caps are on by default on the Pro plan. You can turn spend caps off for usage beyond the plan limits to pay as you grow."
+    "question": "What is the maximum bandwith of usage?",
+    "answer": "Unlike cloud providers like Amazon Web Services, Google Cloud Platform, or Microsoft Azure, we don't charge for bandwidth on a per hourly/ monthly rate. You can use as much as you want."
   },
   {
-    "question": "I'm worried I could end up with a huge bill at the end of the month.",
-    "answer": "Spend caps are on by default and you need to toggle them off from your dashboard to enable pay as you grow pricing."
+    "question": "Can I add users myself?",
+    "answer": "No, doing so will breach the contract which will require all left over payment months to be paid and will terminate any future bussiness."
+  },
+  {
+    "question": "I'm worried I could end up with more employees than users.",
+    "answer": "Adding users will not be an issue, however keep in mind that the CPU, RAM and SSD is shared over all user(s). If you having multiple employees working at once performace may vary. The pro plan can handle at least 10 or more employees without hindering the hosted desktop."
   },
   {
     "question": "When will I be billed?",
-    "answer": "Our Pro plan is charged up front, and billed on a monthly basis. Additional usage costs are also billed at the end of the month."
+    "answer": "Our Basic/ Pro plan is charged up front with a setup fee, then on a monthly basis depending upon the amount of employees on the 1st of the following month after setup. Additional features coming soon might add extra costs which will also billed at the start of the month."
   },
   {
     "question": "Are you going to change your pricing in the future?",
-    "answer": "Our pricing is in Beta. You can read more about our decisions in our [pricing blog post](/blog/2021/03/29/pricing). Pricing may change in the future, however as a team of developers we are committed to pricing being as developer friendly as possible."
+    "answer": "Our pricing is set as long as the contract has not expired. friendly as possible."
   },
   {
     "question": "What happens if I cancel my subscription?",
-    "answer": "The organization is allocated credits for unused time during the billing month. Those credits can be used for other projects."
+    "answer": "The subscription can only be cancelled after the contracting period has ended. Refunds are strictly not available due to the nature of the service."
   },
   {
-    "question": "Do I get a notification if I am approaching my usage limits?",
-    "answer": "Yes, we will email you when you are within 20% of your plan limits."
-  },
-  {
-    "question": "What if I need one project for development and one for production?",
+    "question": "What is a hosted desktop?",
     "answer": "We are working on multi-environment projects. For now, you can create a project for your development backend and production backend. We give you 2 free projects as part of our free plan. This means you could have a development and a production server as part of your free plan."
   },
   {

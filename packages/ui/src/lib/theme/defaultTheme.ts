@@ -6,12 +6,12 @@
 const defaults = {
   bg: {
     brand: {
-      primary: 'bg-purple-600',
-      secondary: 'bg-purple-200',
+      primary: 'bg-emerald-600',
+      secondary: 'bg-emerald-200',
     },
   },
   text: {
-    brand: 'text-purple-600',
+    brand: 'text-emerald-600',
     body: 'text-scale-600 dark:text-scaleDark-200',
     title: 'text-scale-700 dark:text-scaleDark-100',
   },

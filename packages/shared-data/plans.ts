@@ -23,8 +23,8 @@ export const plans: PricingInformation[] = [
     nameBadge: '',
     costUnit: '/ user / month',
     costUnitOrg: '/ month',
-    href: '/pricing',
-    priceLabel: 'One time £150 setup fees',
+    href: 'https://pay.gocardless.com/AL000C9WHBGTR2',
+    priceLabel: 'One time £225 setup fees',
     priceMonthly: 25.99,
     warning: 'Minimum of 5 users per company',
     description: 'For smaller businesses.',
@@ -45,7 +45,7 @@ export const plans: PricingInformation[] = [
       // 'Community support',
     ],
     footer: 'Minimum of 6 month contract.',
-    cta: 'Get Started',
+    cta: 'Get Started for 5 Users',
   },
   {
     id: 'tier_pro',
@@ -53,8 +53,8 @@ export const plans: PricingInformation[] = [
     nameBadge: '',
     costUnit: '/ user / month',
     costUnitOrg: '/ month',
-    href: 'https://supabase.com/dashboard/new/new-project',
-    priceLabel: 'One time £150 setup fees',
+    href: 'https://pay.gocardless.com/AL000C9X1Q4RTS',
+    priceLabel: 'One time £175 setup fees',
     warning: 'Minimum of 5 users per company',
     priceMonthly: 29.99,
     description: 'For larger enterprises and organisations.',
@@ -97,7 +97,7 @@ export const plans: PricingInformation[] = [
     ],
     footer: 'Minimum of 3 month or 12 month contract.',
     preface: 'Better, Faster more powerful',
-    cta: 'Get Started',
+    cta: 'Get Started for 5 Users',
   },
   // {
   //   id: 'tier_enterprise',
@@ -127,7 +127,7 @@ export const plans: PricingInformation[] = [
   {
     id: 'tier_enterprise',
     name: 'Enterprise',
-    href: 'https://forms.supabase.com/enterprise',
+    href: 'https://share-eu1.hsforms.com/15GM1zzxFTc6hH9ECXcjTkA2d9ubw',
     description: 'For large-scale enterprises managing serious workloads.',
     features: [
       `Designated Support manager & SLAs`,

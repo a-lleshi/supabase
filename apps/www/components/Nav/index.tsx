@@ -121,7 +121,7 @@ const Nav = () => {
       <button
         className={[
           'text-scale-900 focus:ring-brand dark:bg-scale-200 dark:hover:bg-scale-300 inline-flex items-center justify-center rounded-md bg-gray-50 p-2 hover:bg-white focus:outline-none focus:ring-2 focus:ring-inset',
-          showLaunchWeekNavMode && '!bg-transparent border border-[#00b2cc]',
+          showLaunchWeekNavMode && '!bg-transparent border border-[#008B8B]',
         ].join(' ')}
         aria-expanded="false"
       >
@@ -132,7 +132,7 @@ const Nav = () => {
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
-          stroke={showLaunchWeekNavMode ? '#00b2cc' : 'currentColor'}
+          stroke={showLaunchWeekNavMode ? '#008B8B' : 'currentColor'}
           aria-hidden="true"
         >
           <path
@@ -336,7 +336,7 @@ const Nav = () => {
                   </Link>
                 ) : (
                   <>
-                    <Link href="https://supabase.com/dashboard">
+                    <Link href="/soon">
                       <a>
                         <Button type="default" className="hidden lg:block">
                           Sign in

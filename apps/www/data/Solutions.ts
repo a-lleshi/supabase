@@ -27,10 +27,10 @@ const solutions = {
     label: '',
     url: '/soon',
   },
-  [PRODUCT_SHORTNAMES.FUNCTIONS]: {
-    name: PRODUCT_NAMES.FUNCTIONS,
-    icon: products.functions.icon[24],
-    description: 'Write custom code without deploying or scaling servers.',
+  [PRODUCT_SHORTNAMES.BACKUP]: {
+    name: PRODUCT_NAMES.BACKUP,
+    icon: products.backup.icon[24],
+    description: 'Back up your cloud data to a local storage device or to the cloud. With a simple setup you can backup your data in minutes.',
     description_short: '',
     label: '',
     url: '/soon',

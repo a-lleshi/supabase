@@ -21,9 +21,9 @@ export default function IndexPage() {
   const [showComputeModal, setShowComputeModal] = useState(false)
   const [activeMobilePlan, setActiveMobilePlan] = useState('Free')
 
-  const meta_title = 'Pricing & fees | Supabase'
+  const meta_title = 'Pricing & fees | Computify'
   const meta_description =
-    'Explore Supabase fees and pricing information. Find our competitive pricing plans, with no hidden pricing. We have a generous free plan for those getting started, and Pay As You Go for those scaling up.'
+    'Explore Computify fees and pricing information. Find our competitive pricing plans, with no hidden pricing. We have a generous monthly for those scaling up.'
 
   const plansExceptEnterprise = plans.filter((it) => it.name !== 'Enterprise')
   const planEnterprise = plans.find((it) => it.name === 'Enterprise')!
@@ -308,9 +308,9 @@ export default function IndexPage() {
         </div>
 
         <div className="text-center mt-20">
-          <a href="#compare-plans">
+          <a href="#faq">
             <Button size="tiny" type="default">
-              Compare Plans
+              Frequently asked questions?
             </Button>
           </a>
         </div>
@@ -420,7 +420,7 @@ export default function IndexPage() {
       <div className="bg-scale-200">
         <div className="sm:py-18 container relative mx-auto px-4 py-16 md:py-24 lg:px-16 lg:py-24 xl:px-20">
           <div className="text-center">
-            <h2 className="text-scale-1200 text-3xl scroll-m-20" id="compare-plans">
+            <h2 className="text-scale-1200 text-3xl scroll-m-20">
               Compare Plans
             </h2>
             <p className="text-scale-1100 mt-4 mb-8 lg:mb-16 text-lg">
@@ -486,8 +486,8 @@ export default function IndexPage() {
                   <PricingTableRowMobile
                     category={pricing['edge_functions']}
                     plan={'Basic'}
-                    icon={Solutions['functions'].icon}
-                    sectionId="edge-functions"
+                    icon={Solutions['backup'].icon}
+                    sectionId="backup"
                   />
                   <PricingTableRowMobile
                     category={pricing.dashboard}
@@ -542,7 +542,7 @@ export default function IndexPage() {
                   <PricingTableRowMobile
                     category={pricing['edge_functions']}
                     plan={'pro'}
-                    icon={Solutions['functions'].icon}
+                    icon={Solutions['backup'].icon}
                   />
                   <PricingTableRowMobile
                     category={pricing.dashboard}
@@ -648,7 +648,7 @@ export default function IndexPage() {
                   <PricingTableRowMobile
                     category={pricing['edge_functions']}
                     plan={'enterprise'}
-                    icon={Solutions['functions'].icon}
+                    icon={Solutions['backup'].icon}
                   />
                   <PricingTableRowMobile
                     category={pricing.dashboard}
@@ -800,8 +800,8 @@ export default function IndexPage() {
                   /> */}
                   <PricingTableRowDesktop
                     category={pricing['edge_functions']}
-                    icon={Solutions['functions'].icon}
-                    sectionId="edge-functions"
+                    icon={Solutions['backup'].icon}
+                    sectionId="backup"
                   />
                   <PricingTableRowDesktop
                     category={pricing.dashboard}
@@ -879,7 +879,7 @@ export default function IndexPage() {
         <div id="faq" className="border-t">
           <div className="mx-auto max-w-5xl gap-y-10 gap-x-10 lg:grid-cols-2">
             <div className="sm:py-18 mx-auto px-6 py-16 md:py-24 lg:px-16 lg:py-24 xl:px-20">
-              <h2 className="h3 text-center">Frequently asked questions</h2>
+              <h2 className="h3 text-center" id="faq">Frequently asked questions</h2>
               <div className="my-16">
                 <Accordion
                   type="default"
