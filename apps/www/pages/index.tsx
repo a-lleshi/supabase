@@ -37,7 +37,7 @@ const Index = ({ customerStories }: Props) => {
     <Layout>
       <Hero />
       <Features />
-      <BackedBy className="pt-8 sm:pb-18 pb-16 md:pb-24 lg:pb-24" />
+      <BackedBy className="pt-25 sm:pb-18 pb-16 md:pb-24 lg:pb-24" />
       <TwitterSocialSection />
       <BuiltExamples />
       <MadeForDevelopers />

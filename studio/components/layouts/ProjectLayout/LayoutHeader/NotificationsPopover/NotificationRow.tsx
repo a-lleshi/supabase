@@ -56,7 +56,7 @@ const NotificationRow = ({
     <div className="flex py-2">
       <div className="flex min-w-[50px] justify-center">
         {notification.notification_status !== NotificationStatus.Seen && (
-          <div className="mt-1.5 h-2 w-2 rounded-full bg-green-900" />
+          <div className="mt-1.5 h-2 w-2 rounded-full bg-emerald-900" />
         )}
       </div>
       <div className="flex-grow mr-8 flex flex-col gap-4">

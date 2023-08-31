@@ -63,8 +63,8 @@ function Database() {
       />
       <DefaultLayout>
         <ProductHeader
-          icon={Solutions['hosteddesktop'].icon}
-          title={Solutions['hosteddesktop'].name}
+          icon={Solutions['desktop'].icon}
+          title={Solutions['desktop'].name}
           h2={[
             <span key={'database-h1'}>
               Your storage, programs and desktop 
@@ -102,7 +102,7 @@ function Database() {
           <div className="grid grid-cols-12">
             <div className="col-span-12 mb-10 lg:col-span-3 lg:mb-0">
               <div className="p mb-4 flex items-center space-x-2">
-                <ProductIcon icon={Solutions['hosteddesktop'].icon} />
+                <ProductIcon icon={Solutions['desktop'].icon} />
                 <IconX />
                 <div className="flex w-fit items-center">
                   <Image
@@ -121,9 +121,9 @@ function Database() {
             </div>
             <div className="col-span-12 mb-10 lg:col-span-3 lg:col-start-5 lg:mb-0">
               <div className="p mb-4 flex items-center space-x-2">
-                <ProductIcon icon={Solutions['hosteddesktop'].icon} />
+                <ProductIcon icon={Solutions['desktop'].icon} />
                 <IconX />
-                <ProductIcon icon={Solutions['authentication'].icon} />
+                <ProductIcon icon={Solutions['backup'].icon} />
               </div>
 
               <h4 className="h4">Built-in Auth</h4>
@@ -135,7 +135,7 @@ function Database() {
             </div>
             <div className="col-span-12 lg:col-span-3 lg:col-start-9">
               <div className="p mb-4 flex items-center space-x-2">
-                <ProductIcon icon={Solutions['hosteddesktop'].icon} />
+                <ProductIcon icon={Solutions['desktop'].icon} />
                 <IconX />
                 <ProductIcon icon={'M13 10V3L4 14h7v7l9-11h-7z'} />
               </div>

@@ -37,7 +37,7 @@ const Hero = () => {
                     <span className="block text-[#F4FFFA00] bg-clip-text bg-gradient-to-b from-scale-1100 to-scale-1100 dark:to-scale-1100">
                       Your Desktop
                     </span>
-                    <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#3ECF8E] via-[#3ECF8E] to-[#3ecfb2] block md:ml-0">
+                    <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#00CFCF] via-[#00CFCF] to-[#00CFAF] block md:ml-0">
                       Anywhere You Need It
                     </span>
                   </h1>
@@ -54,7 +54,7 @@ const Hero = () => {
                     passHref
                   >
                     <a onClick={() => sendTelemetryEvent(gaEvents['www_hp_hero_startProject'])}>
-                      <Button size="medium" className="text-white">
+                      <Button size="medium" className="text-white" type="outline">
                         Hosted Desktop Pricing
                       </Button>
                     </a>
