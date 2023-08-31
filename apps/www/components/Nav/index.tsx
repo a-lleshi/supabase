@@ -294,7 +294,7 @@ const Nav = () => {
                 </div>
               </div>
               <div className="flex items-center gap-2">
-                <a href="https://uk.trustpilot.com/review/www.computify.cloud" target="_blank">
+                <a href="https://uk.trustpilot.com/review/computify.cloud" target="_blank">
                   <Button
                     className="hidden group lg:flex"
                     type="text"
