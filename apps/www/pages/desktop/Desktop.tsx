@@ -53,10 +53,10 @@ function Database() {
         openGraph={{
           title: meta_title,
           description: meta_description,
-          url: `https://supabase.com/database`,
+          url: `https://computify.cloud/database`,
           images: [
             {
-              url: `https://supabase.com${basePath}/images/product/database/database-og.jpg`,
+              url: `https://computify.cloud${basePath}/images/product/database/database-og.jpg`,
             },
           ],
         }}
@@ -72,30 +72,30 @@ function Database() {
             </span>,
           ]}
           subheader={[
-            'Every Supabase project is a dedicated PostgreSQL database, trusted by millions of developers.',
-            'PostgreSQL is one of the worlds most scalable databases.',
+            'Hosted desktops, whether Windows or Linux systems, reside in the cloud and provide the convenience of accessing a fully functional computer from anywhere via a remote desktop connection',
+            'These virtual desktops allow users to run applications, access data, and perform tasks just as they would on a physical computer, offering seamless mobility and productivity while eliminating the need for on-site hardware maintenance.',
           ]}
           image={[
             <div className="header--light block w-full" key="light">
               <Image
-                src={`${basePath}/images/product/database/header--light-2.png`}
-                alt="database header"
+                src={`${basePath}/images/product/database/all-server-dark-1.jpg`}
+                alt="server header"
                 layout="responsive"
                 width="1680"
                 height="1116"
               />
             </div>,
-            <div className="header--dark mr-0 w-full dark:block" key="dark">
+            <div className="header--dark mr-0 w-full dark:block rounded-lg" key="dark">
               <Image
-                src={`${basePath}/images/product/database/header--dark-2.png`}
-                alt="database header"
+                src={`${basePath}/images/product/database/all-server-dark-1.jpg`}
+                alt="server header"
                 layout="responsive"
                 width="1680"
                 height="1116"
               />
             </div>,
           ]}
-          documentation_url={'/docs/guides/database'}
+          documentation_url={'/docs/guides/desktop'}
         />
 
         <SectionContainer>
@@ -153,10 +153,10 @@ function Database() {
         <SectionContainer className="text-center md:pb-0 lg:pb-0">
           <div className="grid grid-cols-12">
             <div className="col-span-12 lg:col-span-8 lg:col-start-3">
-              <h2 className="h3">Easy to use dashboard</h2>
+              <h2 className="h3">Easy to access your server</h2>
 
               <p className="p">
-                The simplicity of a Table Editor, or the power of a SQL editor. Your choice.
+                The simplicity to use Remote Desktop Connection or mRemoteNG. Your choice.
               </p>
             </div>
           </div>
@@ -174,10 +174,10 @@ function Database() {
               }}
               // block
             >
-              <Tabs.Panel id="0" label="Table editor">
+              <Tabs.Panel id="0" label="Remote Desktop Connection (RDP)">
                 <span></span>
               </Tabs.Panel>
-              <Tabs.Panel id="1" label="SQL editor">
+              <Tabs.Panel id="1" label="mRemoteNG">
                 <span></span>
               </Tabs.Panel>
             </Tabs>

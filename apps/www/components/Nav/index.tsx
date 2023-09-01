@@ -327,7 +327,14 @@ const Nav = () => {
                     </span>
                   </Button>
                 </a>
-
+                <Link href="tel:+447388036902">
+                  <a
+                    target="_blank"
+                    className="block py-2 pl-3 pr-4 text-base font-medium rounded-md text-scale-900 dark:hover:bg-scale-600 hover:border-gray-300 hover:bg-gray-50 dark:text-white"
+                  >
+                    Call us!
+                  </a>
+                </Link>
                 {isLoggedIn ? (
                   <Link href="/dashboard/projects">
                     <a>
@@ -430,12 +437,20 @@ const Nav = () => {
                       Docs
                     </a>
                   </Link>
-                  <Link href="https://uk.trustpilot.com/review/www.abcloudsolutions.com">
+                  <Link href="https://uk.trustpilot.com/review/www.computify.cloud">
                     <a
                       target="_blank"
                       className="block py-2 pl-3 pr-4 text-base font-medium rounded-md text-scale-900 dark:hover:bg-scale-600 hover:border-gray-300 hover:bg-gray-50 dark:text-white"
                     >
                       Trustpilot
+                    </a>
+                  </Link>
+                  <Link href="tel:+447388036902">
+                    <a
+                      target="_blank"
+                      className="block py-2 pl-3 pr-4 text-base font-medium rounded-md text-scale-900 dark:hover:bg-scale-600 hover:border-gray-300 hover:bg-gray-50 dark:text-white"
+                    >
+                      Call us!
                     </a>
                   </Link>
                   {/* <Link href="/blog">

@@ -1,4 +1,4 @@
-import { Button, IconBookOpen } from 'ui'
+import { Button, IconBookOpen, IconMessageCircle } from 'ui'
 import Link from 'next/link'
 import ProductIcon from '../ProductIcon'
 
@@ -43,10 +43,10 @@ const ProductHeader = (props: Types) => (
             })}
         </div>
         <div className="flex flex-row md:flex-row md:items-center">
-          <Link href="https://supabase.com/dashboard" as="https://supabase.com/dashboard">
+          <Link href="https://wa.me/message/P5YOIOG3JCPWD1" as="https://wa.me/message/P5YOIOG3JCPWD1">
             <a>
-              <Button size="medium" className="text-white">
-                Start a project
+              <Button size="medium" className="text-white" icon={<IconMessageCircle />}>
+                Message us on WhatsApp!
               </Button>
             </a>
           </Link>

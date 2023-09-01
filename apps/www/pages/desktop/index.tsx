@@ -1,3 +1,3 @@
-import Database from './Database'
+import Desktop from './Desktop'
 
-export default Database
+export default Desktop
