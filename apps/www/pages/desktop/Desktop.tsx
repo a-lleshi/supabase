@@ -1,9 +1,9 @@
 import { Badge, Button, IconArrowUpRight, IconX, Tabs } from 'ui'
 // data
-import ApiExamplesData from 'data/products/database/api-examples'
-import ExtensionsExamplesData from 'data/products/database/extensions-examples'
-import SqlViewCarouselData from 'data/products/database/sql-view-carousel.json'
-import TableViewCarouselData from 'data/products/database/table-view-carousel.json'
+import ApiExamplesData from 'data/products/desktop/api-examples'
+import ExtensionsExamplesData from 'data/products/desktop/extensions-examples'
+import SqlViewCarouselData from 'data/products/desktop/sql-view-carousel.json'
+import TableViewCarouselData from 'data/products/desktop/table-view-carousel.json'
 import Solutions from 'data/Solutions'
 import { NextSeo } from 'next-seo'
 import Image from 'next/image'
@@ -200,12 +200,12 @@ function Database() {
                 <ImageCarousel
                   content={TableViewCarouselData}
                   footer={[
-                    <TweetCard
-                      handle="@Elsolo244"
-                      key="@Elsolo244"
-                      img_url={`${basePath}/images/twitter-profiles/v6citnk33y2wpeyzrq05_400x400.jpeg`}
-                      quote="Where has @supabase been all my life? 😍"
-                    />,
+                    // <TweetCard
+                    //   handle="@Elsolo244"
+                    //   key="@Elsolo244"
+                    //   img_url={`${basePath}/images/twitter-profiles/v6citnk33y2wpeyzrq05_400x400.jpeg`}
+                    //   quote="Where has @supabase been all my life? 😍"
+                    // />,
                   ]}
                 />
               </SectionContainer>
@@ -215,12 +215,12 @@ function Database() {
                 <ImageCarousel
                   content={SqlViewCarouselData}
                   footer={[
-                    <TweetCard
-                      handle="@jim_bisenius"
-                      key="@jim_bisenius"
-                      img_url={`${basePath}/images/twitter-profiles/rLgwUZSB_400x400.jpg`}
-                      quote="@MongoDB or @MySQL?!?! Please, let me introduce you to @supabase and the wonderful world of @PostgreSQL before it's too late!!"
-                    />,
+                    // <TweetCard
+                    //   handle="@jim_bisenius"
+                    //   key="@jim_bisenius"
+                    //   img_url={`${basePath}/images/twitter-profiles/rLgwUZSB_400x400.jpg`}
+                    //   quote="@MongoDB or @MySQL?!?! Please, let me introduce you to @supabase and the wonderful world of @PostgreSQL before it's too late!!"
+                    // />,
                   ]}
                 />
               </SectionContainer>

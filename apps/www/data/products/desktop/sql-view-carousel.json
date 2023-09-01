@@ -1,21 +1,21 @@
 [
   {
-    "title": "Full SQL",
-    "label": "SQL Editor built in",
+    "title": "Manage all users",
+    "label": "Manage users",
     "img_url": "/images/product/database/sql-view/sql-editor.png",
     "text": "Create tables, functions, join tables - A full SQL editor built into the dashboard",
     "url": ""
   },
   {
-    "title": "Monaco editor",
-    "label": "Monaco editor",
+    "title": "Login as any user",
+    "label": "Login as any user",
     "img_url": "/images/product/database/sql-view/manaco-editor.png",
     "text": "Built in Monaco editor, with rich validation and autocomplete.",
     "url": ""
   },
   {
-    "title": "Favorite queries",
-    "label": "Favorite queries",
+    "title": "Login in to multiple users",
+    "label": "Login as multiple users at the same time",
     "img_url": "/images/product/database/sql-view/favorites.png",
     "text": "Save your favorite queries to use again and again.",
     "url": ""

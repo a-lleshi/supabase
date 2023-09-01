@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Login to your server",
+    "label": "Login",
+    "img_url": "/images/product/database/table-view/spreadsheet-interface.png",
+    "text": "Logging into your server is the gateway to your digital world. With secure credentials and authentication, it grants you access to your data, applications, and resources. Whether for remote management or data retrieval, the login process ensures your server responds to your commands and safeguards your digital assets.",
+    "url": ""
+  },
+  {
+    "title": "Exit your server",
+    "label": "Sign out",
+    "img_url": "/images/product/database/table-view/create-table.png",
+    "text": "Signing out of your server is the key to safeguarding your digital privacy and security. It disconnects your access, ensuring that sensitive data and applications remain protected. By clicking 'disconnecting' you prevent unauthorised access and maintain control over your digital environment.",
+    "url": ""
+  },
+  {
+    "title": "Set up two-factor authentication",
+    "label": "Set up 2FA",
+    "img_url": "/images/product/database/table-view/foreign-keys.png",
+    "text": "Implementing two-factor authentication (2FA) fortifies your server's security. It adds an extra layer of protection by requiring not only a password but also a unique code from a separate device, ensuring that only authorised users gain access. This robust defense shields your server from potential threats and breaches.",
+    "url": ""
+  }
+]

@@ -17,15 +17,6 @@ const { data, error } = await supabase
   })
 
 
-  
-
-
-
-
-
-
-
-
 `,
   },
   {
@@ -43,15 +34,7 @@ const { data, error } = await supabase
   \`)
   .eq('public', true)
 
-
-
-
-
-
-
-
-
-
+  
 `,
   },
 ]
