@@ -29,13 +29,13 @@ type PricingFeature = {
 
 export const pricing: Pricing = {
   desktop: {
-    title: 'hosteddesktop',
+    title: 'Hosted Desktops',
     icon: 'M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4',
     features: [
       {
         title: 'Dedicated Hosted Windows Desktops',
         tooltips: {
-          main: 'A Postgres database with no restrictions? You get it. No pseudo limited users, you are the postgres root user.  No caveats.',
+          main: 'You windows computer with no restrictions? You get it. No pseudo limitations, you are the root user.  No caveats.',
         },
         plans: {
           free: true,
@@ -46,7 +46,10 @@ export const pricing: Pricing = {
         usage_based: false,
       },
       {
-        title: 'Unlimited API requests',
+        title: 'Dedicated Hosted Linxus Desktops',
+        tooltips: {
+          main: 'You linux computer with no restrictions? You get it. No pseudo limitations, you are the root user.  No caveats.',
+        },
         plans: {
           free: true,
           pro: true,
@@ -58,15 +61,15 @@ export const pricing: Pricing = {
       {
         title: 'Database size',
         tooltips: {
-          main: 'Billing is based on the average daily database size in GB throughout the billing period.',
+          main: 'Database are all stored on SSDs.  We do not charge for the size of the database, only the amount of data you use.',
         },
         plans: {
-          free: '500 MB included',
-          pro: '8 GB included, then $0.125 per GB',
+          free: '320 GB included',
+          pro: '1000 GB included',
           // team: '8 GB included, then $0.125 per GB',
-          enterprise: 'Unlimited',
+          enterprise: 'Contact',
         },
-        usage_based: true,
+        usage_based: false,
       },
       {
         title: 'Automatic backups',
@@ -98,36 +101,36 @@ export const pricing: Pricing = {
         },
         usage_based: false,
       },
-      {
-        title: 'Pausing',
-        tooltips: {
-          main: 'Projects that have no activity or API requests will be paused. They can be reactivated via the dashboard',
-        },
-        plans: {
-          free: 'After 1 inactive week',
-          pro: 'Never',
-          // team: 'Never',
-          enterprise: 'Never',
-        },
-        usage_based: false,
-      },
-      {
-        title: 'Database egress',
-        tooltips: {
-          main: 'Billing is based on the total sum of outgoing traffic of your database in GB throughout your billing period.',
-        },
-        plans: {
-          free: '2GB included',
-          pro: '50 GB included, then $0.09 per GB',
-          // team: '50 GB included, then $0.09 per GB',
-          enterprise: 'Unlimited',
-        },
-        usage_based: true,
-      },
+      // {
+      //   title: 'Pausing',
+      //   tooltips: {
+      //     main: 'Projects that have no activity or API requests will be paused. They can be reactivated via the dashboard',
+      //   },
+      //   plans: {
+      //     free: 'After 1 inactive week',
+      //     pro: 'Never',
+      //     // team: 'Never',
+      //     enterprise: 'Never',
+      //   },
+      //   usage_based: false,
+      // },
+      // {
+      //   title: 'Database egress',
+      //   tooltips: {
+      //     main: 'Billing is based on the total sum of outgoing traffic of your database in GB throughout your billing period.',
+      //   },
+      //   plans: {
+      //     free: '2GB included',
+      //     pro: '50 GB included, then $0.09 per GB',
+      //     // team: '50 GB included, then $0.09 per GB',
+      //     enterprise: 'Unlimited',
+      //   },
+      //   usage_based: true,
+      // },
     ],
   },
   communications: {
-    title: 'Communcations',
+    title: 'Unified Communcations',
     icon: 'M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4',
     features: [
       {
@@ -227,7 +230,7 @@ export const pricing: Pricing = {
     ],
   },
   office365: {
-    title: 'Storage',
+    title: 'Office 365',
     icon: 'M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4',
 
     features: [
@@ -304,11 +307,11 @@ export const pricing: Pricing = {
     ],
   },
   edge_functions: {
-    title: 'Edge Functions',
+    title: 'Storage',
     icon: 'M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4',
     features: [
       {
-        title: 'Invocations',
+        title: '250 GB included',
         tooltips: {
           main: 'Billing is based on the sum of all invocations, independent of response status, throughout your billing period.',
         },
@@ -321,7 +324,7 @@ export const pricing: Pricing = {
         usage_based: true,
       },
       {
-        title: 'Script size',
+        title: '500 GB included',
         plans: {
           free: '2 MB',
           pro: '10 MB',
@@ -331,7 +334,7 @@ export const pricing: Pricing = {
         usage_based: false,
       },
       {
-        title: 'Number of functions',
+        title: '1000 GB included',
         tooltips: {
           main: 'Billing is based on the maximum amount of functions at any point in time throughout your billing period.',
         },
@@ -437,211 +440,211 @@ export const pricing: Pricing = {
     title: 'Platform Security and Compliance',
     icon: 'M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z',
     features: [
-      {
-        title: 'On Premises / BYO cloud',
-        plans: {
-          free: false,
-          pro: false,
-          // team: false,
-          enterprise: true,
-        },
-        usage_based: false,
-      },
-      {
-        title: 'Log retention (API & Database)',
-        plans: {
-          free: '1 day',
-          pro: '7 days',
-          // team: '28 days',
-          enterprise: '90 days',
-        },
-        usage_based: false,
-      },
-      {
-        title: 'Log drain',
-        plans: {
-          free: false,
-          pro: false,
-          // team: 'Coming soon',
-          enterprise: 'Coming soon',
-        },
-        usage_based: false,
-      },
-      {
-        title: 'Metrics endpoint',
-        plans: {
-          free: false,
-          pro: true,
-          // team: true,
-          enterprise: true,
-        },
-        usage_based: false,
-      },
-      {
-        title: 'SOC2',
-        plans: {
-          free: false,
-          pro: false,
-          // team: true,
-          enterprise: true,
-        },
-        usage_based: false,
-      },
-      {
-        title: 'HIPAA',
-        plans: {
-          free: false,
-          pro: false,
-          // team: true,
-          enterprise: true,
-        },
-        tooltips: {
-          main: 'Available as a paid add-on on Team plan and above.',
-        },
-        usage_based: false,
-      },
-      {
-        title: 'SSO',
-        plans: {
-          free: false,
-          pro: false,
-          // team: 'Contact Us',
-          enterprise: 'Contact Us',
-        },
-        usage_based: false,
-      },
-      {
-        title: '99.9% SLA',
-        plans: {
-          free: false,
-          pro: false,
-          // team: false,
-          enterprise: true,
-        },
-        usage_based: false,
-      },
-      {
-        title: 'Access Roles',
-        plans: {
-          free: 'Owner, Developer',
-          pro: 'Owner, Developer',
-          // team: 'Additional owner(s), admin, read-only, billing admin, custom',
-          enterprise: 'Additional owner(s), admin, read-only, billing admin, custom',
-        },
-        usage_based: false,
-      },
-      {
-        title: 'Vanity URLs',
-        plans: {
-          free: false,
-          pro: true,
-          // team: true,
-          enterprise: true,
-        },
-        usage_based: false,
-      },
-      {
-        title: 'Custom Domains',
-        tooltips: {
-          enterprise: 'Volume discounts available.',
-        },
-        plans: {
-          free: false,
-          pro: '$10 per domain per month per project add on',
-          // team: '$10 per domain per month per project add on',
-          enterprise: '1, additional $10/domain/month',
-        },
-        usage_based: false,
-      },
-      {
-        title: 'Bring your own cloud deployment options',
-        tooltips: {
-          main: 'On-Premises, single tenant, and managed dedicated cloud provider instance options',
-        },
-        plans: {
-          free: false,
-          pro: false,
-          // team: false,
-          enterprise: true,
-        },
-        usage_based: false,
-      },
+      // {
+      //   title: 'On Premises / BYO cloud',
+      //   plans: {
+      //     free: false,
+      //     pro: false,
+      //     // team: false,
+      //     enterprise: true,
+      //   },
+      //   usage_based: false,
+      // },
+      // {
+      //   title: 'Log retention (API & Database)',
+      //   plans: {
+      //     free: '1 day',
+      //     pro: '7 days',
+      //     // team: '28 days',
+      //     enterprise: '90 days',
+      //   },
+      //   usage_based: false,
+      // },
+      // {
+      //   title: 'Log drain',
+      //   plans: {
+      //     free: false,
+      //     pro: false,
+      //     // team: 'Coming soon',
+      //     enterprise: 'Coming soon',
+      //   },
+      //   usage_based: false,
+      // },
+      // {
+      //   title: 'Metrics endpoint',
+      //   plans: {
+      //     free: false,
+      //     pro: true,
+      //     // team: true,
+      //     enterprise: true,
+      //   },
+      //   usage_based: false,
+      // },
+      // {
+      //   title: 'SOC2',
+      //   plans: {
+      //     free: false,
+      //     pro: false,
+      //     // team: true,
+      //     enterprise: true,
+      //   },
+      //   usage_based: false,
+      // },
+      // {
+      //   title: 'HIPAA',
+      //   plans: {
+      //     free: false,
+      //     pro: false,
+      //     // team: true,
+      //     enterprise: true,
+      //   },
+      //   tooltips: {
+      //     main: 'Available as a paid add-on on Team plan and above.',
+      //   },
+      //   usage_based: false,
+      // },
+      // {
+      //   title: 'SSO',
+      //   plans: {
+      //     free: false,
+      //     pro: false,
+      //     // team: 'Contact Us',
+      //     enterprise: 'Contact Us',
+      //   },
+      //   usage_based: false,
+      // },
+      // {
+      //   title: '99.9% SLA',
+      //   plans: {
+      //     free: false,
+      //     pro: false,
+      //     // team: false,
+      //     enterprise: true,
+      //   },
+      //   usage_based: false,
+      // },
+      // {
+      //   title: 'Access Roles',
+      //   plans: {
+      //     free: 'Owner, Developer',
+      //     pro: 'Owner, Developer',
+      //     // team: 'Additional owner(s), admin, read-only, billing admin, custom',
+      //     enterprise: 'Additional owner(s), admin, read-only, billing admin, custom',
+      //   },
+      //   usage_based: false,
+      // },
+      // {
+      //   title: 'Vanity URLs',
+      //   plans: {
+      //     free: false,
+      //     pro: true,
+      //     // team: true,
+      //     enterprise: true,
+      //   },
+      //   usage_based: false,
+      // },
+      // {
+      //   title: 'Custom Domains',
+      //   tooltips: {
+      //     enterprise: 'Volume discounts available.',
+      //   },
+      //   plans: {
+      //     free: false,
+      //     pro: '$10 per domain per month per project add on',
+      //     // team: '$10 per domain per month per project add on',
+      //     enterprise: '1, additional $10/domain/month',
+      //   },
+      //   usage_based: false,
+      // },
+      // {
+      //   title: 'Bring your own cloud deployment options',
+      //   tooltips: {
+      //     main: 'On-Premises, single tenant, and managed dedicated cloud provider instance options',
+      //   },
+      //   plans: {
+      //     free: false,
+      //     pro: false,
+      //     // team: false,
+      //     enterprise: true,
+      //   },
+      //   usage_based: false,
+      // },
     ],
   },
   support: {
     title: 'Support',
     icon: 'M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z',
     features: [
-      {
-        title: 'Community support',
-        plans: {
-          free: true,
-          pro: true,
-          // team: true,
-          enterprise: true,
-        },
-        usage_based: false,
-      },
-      {
-        title: 'Email support',
-        plans: {
-          free: false,
-          pro: true,
-          // team: true,
-          enterprise: true,
-        },
-        usage_based: false,
-      },
-      {
-        title: 'Email support SLA',
-        plans: {
-          free: false,
-          pro: false,
-          // team: true,
-          enterprise: true,
-        },
-        usage_based: false,
-      },
-      {
-        title: 'Designated support',
-        plans: {
-          free: false,
-          pro: false,
-          // team: false,
-          enterprise: true,
-        },
-        usage_based: false,
-      },
-      {
-        title: 'On Boarding Support',
-        plans: {
-          free: false,
-          pro: false,
-          // team: false,
-          enterprise: true,
-        },
-        usage_based: false,
-      },
-      {
-        title: 'Designated customer success engineer ',
-        plans: {
-          free: false,
-          pro: false,
-          // team: false,
-          enterprise: true,
-        },
-        usage_based: false,
-      },
-      {
-        title: 'Security Questionnaire Help',
-        plans: {
-          free: false,
-          pro: false,
-          // team: true,
-          enterprise: true,
-        },
-        usage_based: false,
-      },
+      // {
+      //   title: 'Community support',
+      //   plans: {
+      //     free: true,
+      //     pro: true,
+      //     // team: true,
+      //     enterprise: true,
+      //   },
+      //   usage_based: false,
+      // },
+      // {
+      //   title: 'Email support',
+      //   plans: {
+      //     free: false,
+      //     pro: true,
+      //     // team: true,
+      //     enterprise: true,
+      //   },
+      //   usage_based: false,
+      // },
+      // {
+      //   title: 'Email support SLA',
+      //   plans: {
+      //     free: false,
+      //     pro: false,
+      //     // team: true,
+      //     enterprise: true,
+      //   },
+      //   usage_based: false,
+      // },
+      // {
+      //   title: 'Designated support',
+      //   plans: {
+      //     free: false,
+      //     pro: false,
+      //     // team: false,
+      //     enterprise: true,
+      //   },
+      //   usage_based: false,
+      // },
+      // {
+      //   title: 'On Boarding Support',
+      //   plans: {
+      //     free: false,
+      //     pro: false,
+      //     // team: false,
+      //     enterprise: true,
+      //   },
+      //   usage_based: false,
+      // },
+      // {
+      //   title: 'Designated customer success engineer ',
+      //   plans: {
+      //     free: false,
+      //     pro: false,
+      //     // team: false,
+      //     enterprise: true,
+      //   },
+      //   usage_based: false,
+      // },
+      // {
+      //   title: 'Security Questionnaire Help',
+      //   plans: {
+      //     free: false,
+      //     pro: false,
+      //     // team: true,
+      //     enterprise: true,
+      //   },
+      //   usage_based: false,
+      // },
     ],
   },
 }

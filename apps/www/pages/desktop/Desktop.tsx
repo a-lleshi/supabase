@@ -3,6 +3,7 @@ import { Badge, Button, IconArrowUpRight, IconX, Tabs } from 'ui'
 import ApiExamplesData from 'data/products/desktop/api-examples'
 import ExtensionsExamplesData from 'data/products/desktop/extensions-examples'
 import SqlViewCarouselData from 'data/products/desktop/sql-view-carousel.json'
+import SqlViewCarouselData2 from 'data/products/desktop/sql-view-carousel2.json'
 import TableViewCarouselData from 'data/products/desktop/table-view-carousel.json'
 import Solutions from 'data/Solutions'
 import { NextSeo } from 'next-seo'
@@ -22,6 +23,7 @@ import SectionContainer from '~/components/Layouts/SectionContainer'
 import ProductIcon from '~/components/ProductIcon'
 import APISection from '~/components/Sections/APISection'
 import GithubExamples from '~/components/Sections/GithubExamples'
+import DesktopContactUs from '~/components/Sections/DesktopContactUs'
 import ProductHeader from '~/components/Sections/ProductHeader'
 import TweetCard from '~/components/TweetCard'
 
@@ -101,7 +103,7 @@ function Database() {
         <SectionContainer>
           <div className="grid grid-cols-12">
             <div className="col-span-12 mb-10 lg:col-span-3 lg:mb-0">
-              <div className="p mb-4 flex items-center space-x-2">
+              {/* <div className="p mb-4 flex items-center space-x-2">
                 <ProductIcon icon={Solutions['desktop'].icon} />
                 <IconX />
                 <div className="flex w-fit items-center">
@@ -112,38 +114,37 @@ function Database() {
                     alt="postgresql icon"
                   />
                 </div>
-              </div>
-              <h4 className="h4">Just Postgres</h4>
-              <p className="p">Every Supabase project is a dedicated Postgres database.</p>
+              </div> */}
+              <h4 className="h4">Scalable</h4>
+              {/* <p className="p">Every desktop can be accessible from any computer</p> */}
               <p className="p text-sm">
-                100% portable. Bring your existing Postgres database, or migrate away at any time.
+                Hosted desktop solutions can scale easily to accommodate the changing needs of your business, whether you're adding more users or expanding your computing resources.
               </p>
             </div>
             <div className="col-span-12 mb-10 lg:col-span-3 lg:col-start-5 lg:mb-0">
-              <div className="p mb-4 flex items-center space-x-2">
+              {/* <div className="p mb-4 flex items-center space-x-2">
                 <ProductIcon icon={Solutions['desktop'].icon} />
                 <IconX />
                 <ProductIcon icon={Solutions['backup'].icon} />
-              </div>
+              </div> */}
 
-              <h4 className="h4">Built-in Auth</h4>
-              <p className="p">Leveraging PostgreSQL's proven Row Level Security.</p>
+              <h4 className="h4">Flexible</h4>
+              {/* <p className="p">Leveraging PostgreSQL's proven Row Level Security.</p> */}
               <p className="p text-sm">
-                Integrated with JWT authentication which controls exactly what your users can
-                access.
+                These desktops offer flexibility, enabling users to work from various devices and locations while maintaining the same computing environment and data access.
               </p>
             </div>
             <div className="col-span-12 lg:col-span-3 lg:col-start-9">
-              <div className="p mb-4 flex items-center space-x-2">
+              {/* <div className="p mb-4 flex items-center space-x-2">
                 <ProductIcon icon={Solutions['desktop'].icon} />
                 <IconX />
                 <ProductIcon icon={'M13 10V3L4 14h7v7l9-11h-7z'} />
-              </div>
+              </div> */}
 
-              <h4 className="h4">Realtime enabled</h4>
-              <p className="p">Data-change listeners over websockets.</p>
+              <h4 className="h4">Efficient</h4>
+              {/* <p className="p">Data-change listeners over websockets.</p> */}
               <p className="p text-sm">
-                Subscribe and react to database changes, milliseconds after they happen.
+                Hosted desktops streamline operations and make tasks more efficient by allowing users to access their desktop and applications from anywhere with an internet connection.
               </p>
             </div>
           </div>
@@ -178,6 +179,9 @@ function Database() {
                 <span></span>
               </Tabs.Panel>
               <Tabs.Panel id="1" label="mRemoteNG">
+                <span></span>
+              </Tabs.Panel>
+              <Tabs.Panel id="2" label="RDP for MAC">
                 <span></span>
               </Tabs.Panel>
             </Tabs>
@@ -225,47 +229,23 @@ function Database() {
                 />
               </SectionContainer>
             </SwiperSlide>
+            <SwiperSlide key={2}>
+              <SectionContainer className="pt-16 pb-0">
+                <ImageCarousel
+                  content={SqlViewCarouselData2}
+                  footer={[
+                    // <TweetCard
+                    //   handle="@jim_bisenius"
+                    //   key="@jim_bisenius"
+                    //   img_url={`${basePath}/images/twitter-profiles/rLgwUZSB_400x400.jpg`}
+                    //   quote="@MongoDB or @MySQL?!?! Please, let me introduce you to @supabase and the wonderful world of @PostgreSQL before it's too late!!"
+                    // />,
+                  ]}
+                />
+              </SectionContainer>
+            </SwiperSlide>
           </div>
         </Swiper>
-
-        <SectionContainer className="-mb-48">
-          <APISection
-            // @ts-ignore
-            content={ApiExamplesData}
-            title="Never write an API again"
-            text={[
-              <p key={0}>
-                We introspect your database and provide instant APIs. Focus on building your
-                product, while Supabase handles the CRUD.
-              </p>,
-            ]}
-            footer={[
-              <div className="grid grid-cols-12" key={0}>
-                <div className="col-span-12 mt-0 flex lg:col-span-6 xl:col-span-12 xl:mb-8">
-                  <p>
-                    <p className="text-scale-1100 m-0">Libraries coming soon:</p>
-                  </p>
-                  <div className="ml-1 space-x-1">
-                    <Badge dot={false}>Python</Badge>
-                    <Badge dot={false}>Dart</Badge>
-                    <Badge dot={false}>C#</Badge>
-                    <Badge dot={false}>Kotlin</Badge>
-                  </div>
-                </div>
-                <div className="col-span-12 hidden lg:col-span-6 xl:col-span-10 xl:block" key={1}>
-                  {/* <TweetCard
-                    handle="@eunjae_lee"
-                    img_url="https://pbs.twimg.com/profile_images/1188191474401320965/eGjSYbQd_400x400.jpg"
-                    quote="So they just help me use @PostgreSQL better. They don't try to invent a wheel and trap me
-          in it. Whereas they provide a good abstraction overall, they also provide a raw access to
-          the database."
-                  /> */}
-                </div>
-              </div>,
-            ]}
-            documentation_link={'/docs/guides/database'}
-          />
-        </SectionContainer>
 
         <div className="relative">
           <div className="section--masked">
@@ -273,10 +253,10 @@ function Database() {
               <div className="section--bg border-t border-b border-gray-100 dark:border-gray-600"></div>
             </div>
             <div className="section-container pt-12 pb-0">
-              <FloatingIcons />
+              {/* <FloatingIcons /> */}
               <div className="overflow-x-hidden">
                 <SectionContainer className="mb-0 pb-8 lg:pt-32">
-                  <GithubExamples />
+                  <DesktopContactUs />
                 </SectionContainer>
               </div>
             </div>

@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Manage all users",
+    "label": "Manage users",
+    "img_url": "/images/product/database/643x0w.png",
+    "text": "Create tables, functions, join tables - A full SQL editor built into the dashboard",
+    "url": ""
+  },
+  {
+    "title": "Login as any user",
+    "label": "Login as any user",
+    "img_url": "/images/product/database/sql-view/manaco-editor.png",
+    "text": "Built in Monaco editor, with rich validation and autocomplete.",
+    "url": ""
+  },
+  {
+    "title": "Login in to multiple users",
+    "label": "Login as multiple users at the same time",
+    "img_url": "/images/product/database/sql-view/favorites.png",
+    "text": "Save your favorite queries to use again and again.",
+    "url": ""
+  },
+  {
+    "title": "Export to CSV",
+    "label": "Select and Export",
+    "img_url": "/images/product/database/sql-view/export.png",
+    "text": "Any output can be exported into a CSV",
+    "url": ""
+  }
+]

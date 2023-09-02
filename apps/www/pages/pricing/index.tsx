@@ -424,7 +424,7 @@ export default function IndexPage() {
               Compare Plans
             </h2>
             <p className="text-scale-1100 mt-4 mb-8 lg:mb-16 text-lg">
-              Start with a hobby project, collaborate with a team, and scale to millions of users.
+              Start with a basic plan, scale to a pro with a team, and reach for an enterprise solution.
             </p>
           </div>
 
@@ -457,7 +457,7 @@ export default function IndexPage() {
                     plan="Basic"
                     price={'0'}
                     priceDescription={'/mo'}
-                    description={'Perfect for hobby projects and experiments'}
+                    description={'Perfect for small businesses.'}
                   />
                   <PricingTableRowMobile
                     category={pricing.desktop}
@@ -515,9 +515,9 @@ export default function IndexPage() {
                   <MobileHeader
                     plan="Pro"
                     from={false}
-                    price={'25'}
-                    priceDescription={'/mo + additional use'}
-                    description={'Everything you need to scale your project into production'}
+                    price={'29.99'}
+                    priceDescription={'/user/mo'}
+                    description={'Everything you need to scale your bussiness'}
                   />
                   <PricingTableRowMobile
                     category={pricing.desktop}

@@ -42,13 +42,13 @@ const Footer = (props: Props) => {
                   }
                   width={160}
                   height={30}
-                  alt="Supabase"
+                  alt="Computify"
                 />
               </a>
             </Link>
             <div className="flex space-x-5">
               <a
-                href="https://twitter.com/supabase"
+                href="https://twitter.com/Computify"
                 className="text-scale-900 hover:text-scale-1200 transition"
               >
                 <span className="sr-only">Twitter</span>
@@ -57,8 +57,8 @@ const Footer = (props: Props) => {
                 </svg>
               </a>
 
-              <a
-                href="https://github.com/supabase"
+              {/* <a
+                href="https://github.com/Computify"
                 className="text-scale-900 hover:text-scale-1200 transition"
               >
                 <span className="sr-only">GitHub</span>
@@ -72,7 +72,7 @@ const Footer = (props: Props) => {
               </a>
 
               <a
-                href="https://discord.supabase.com/"
+                href="https://discord.computify.com/"
                 className="text-scale-900 hover:text-scale-1200 transition"
               >
                 <span className="sr-only">Discord</span>
@@ -83,10 +83,10 @@ const Footer = (props: Props) => {
                     clipRule="evenodd"
                   />
                 </svg>
-              </a>
+              </a> */}
 
               <a
-                href="https://youtube.com/c/supabase"
+                href="https://youtube.com/c/Computify"
                 className="text-scale-900 hover:text-scale-1200 transition"
               >
                 <span className="sr-only">Youtube</span>
@@ -102,7 +102,7 @@ const Footer = (props: Props) => {
             </div>
           </div>
           <div className="mt-12 grid grid-cols-1 gap-8 xl:col-span-2 xl:mt-0">
-            <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
+            <div className="grid grid-cols-2 gap-8 md:grid-cols-3">
               {FooterLinks.map((segment) => {
                 return (
                   <div key={`footer_${segment.title}`}>
@@ -148,7 +148,7 @@ const Footer = (props: Props) => {
           </div>
         </div>
         <div className="border-scale-500 dark:border-scale-600 mt-32 flex justify-between border-t pt-8">
-          <small className="small">&copy; Computify Limited</small>
+          <small className="small">&copy; Computify Limited      -    Thanks to Supabase INC. for allowing their open source website to be used!</small>
           <DarkModeToggle disabled={isLaunchWeekPage} />
         </div>
       </SectionContainer>
